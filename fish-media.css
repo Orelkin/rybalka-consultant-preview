@@ -1,0 +1,126 @@
+/* Shared fish presentation. Load after the recovered stylesheet. */
+.fish-section-open #app>.header,.fish-section-open #app>.topbar{display:none}
+.fish25-logo svg{width:43px;height:32px;display:block;color:#29baff}
+.fish25-page,.fish25-group-page,.fp25{color:#e9f5ff}
+.fish25-head,.fish25-group-head{align-items:center;gap:10px;margin-bottom:14px}
+.fish25-head h2{font-size:27px;line-height:1.1}
+.fish25-group-head h2{font-size:22px;line-height:1.15}
+.fish25-sub,.fish25-group-title span{font-size:11px;line-height:1.35;color:#9ab7cd}
+.fish25-titleline,.fish25-group-title{min-width:0}
+.fish25-logo{background:linear-gradient(145deg,#0b3350,#061829);border-color:#17587c;box-shadow:0 0 20px #0897e519}
+.fish25-search{height:43px;border-radius:14px;background:linear-gradient(145deg,#0c2944,#071b2e);border-color:#17517b}
+.fish25-search input{font-size:13px}
+.fish25-scope{gap:7px;padding-bottom:13px}
+.fish25-scope-btn{min-height:49px;padding:8px 11px;font-size:10px;border-radius:14px;background:linear-gradient(180deg,#0a2640,#07192d)}
+.fish25-scope-btn.active{color:#00152a;background:linear-gradient(145deg,#55d3ff,#21a4f2);box-shadow:0 3px 18px #08aaff35}
+.fish25-section-title{align-items:center;margin:6px 0 9px}
+.fish25-section-title b{font-size:18px}
+.fish25-section-title span{font-size:10px;line-height:1.35}
+.fish25-targets{gap:8px;padding-bottom:14px}
+.fish25-target{flex:0 0 90px!important;height:132px!important;border-radius:14px;border-color:#185278}
+.fish25-target-name{position:absolute!important;left:0!important;right:0!important;bottom:0!important;z-index:3;padding:20px 8px 9px;font-size:12px;line-height:1.2;background:linear-gradient(180deg,transparent,#031321d9 40%,#031321f5)}
+.fish25-target-star{width:26px;height:26px;right:6px;top:6px;background:#041a2dcc;border-color:#5ca9d654;font-size:15px}
+.fish25-groups{gap:8px}
+.fish25-group-card{grid-template-columns:103px minmax(0,1fr) 32px;gap:10px;min-height:82px;border-radius:15px;border-color:#174b71;background:linear-gradient(135deg,#092640,#051725)}
+.fish25-group-photo{height:82px}
+.fish25-group-copy b{font-size:13px;line-height:1.2}
+.fish25-group-copy span{font-size:10px;line-height:1.35;color:#a9bfd2}
+.fish25-group-count{width:30px;min-width:30px;height:30px;border-radius:11px;background:#08253d;color:#e0f4ff;border-color:#1c5274;font-size:12px}
+.fish25-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.fish25-species{position:relative;display:flex;flex-direction:column;min-width:0;border-radius:13px;border-color:#1b5279;background:linear-gradient(180deg,#09263b,#041422);box-shadow:0 4px 12px #00000020}
+.fish25-species-img{height:auto;aspect-ratio:4/3;min-height:82px;flex:none}
+.fish25-species-copy{position:relative;z-index:3;margin-top:0;padding:8px 7px 9px;min-height:48px;background:linear-gradient(180deg,#05223999,#041422)}
+.fish25-species-name{font-size:12px;line-height:1.18;overflow-wrap:anywhere;color:#f2f8ff;font-weight:800}
+.fish25-species-kind{font-size:9px;line-height:1.3;margin-top:4px;color:#a7c5dc;overflow-wrap:anywhere}
+.fish25-species-status{top:5px;right:5px;width:26px;height:26px;background:#041b30c9;border-color:#5d9fc354}
+.fish25-species-status.fav,.fish25-species-status.notfav{font-size:17px;color:#bbd9ed}
+.fish25-species-status.fav{color:#45c9ff}
+.fish25-photo-review{display:none!important}
+
+/* Contain without the old padded black rectangle: the full body remains visible. */
+.fish25-target,.fish25-group-photo,.fish25-species-img,.fp25-hero,.fp25-look{
+  isolation:isolate;background:radial-gradient(ellipse at 50% 38%,#12536b66,#06223b 75%)!important
+}
+.fish25-target img,.fish25-group-photo img,.fish25-species-img img,.fp25-hero>img,.fp25-look img{
+  display:block;position:relative;z-index:1;width:100%;height:100%;padding:0!important;margin:0;box-sizing:border-box;
+  object-fit:contain!important;object-position:50% 50%!important;background:transparent!important;filter:none!important
+}
+.fish25-target::before,.fish25-group-photo::before,.fish25-species-img::before,.fp25-hero::before{
+  content:"";position:absolute;inset:0;z-index:0;background-image:var(--fish-photo,none);background-position:center;
+  background-size:cover;filter:blur(12px) saturate(.85) brightness(.75);transform:scale(1.08);opacity:.5
+}
+.fp25-look::before{content:none!important}
+.fish25-target::after,.fish25-group-photo::after,.fish25-species-img::after{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,#020d1800 50%,#020d1838)!important;backdrop-filter:none
+}
+.fish25-group-photo::after{background:linear-gradient(90deg,#061c2900 60%,#061c296b)!important}
+/* Close artwork framing matches the reference; species photos retain the whole body. */
+.fish25-target[data-fish-media-kind="illustration"] img,
+.fish25-group-photo[data-fish-media-kind="illustration"] img,
+.fish25-species-img[data-fish-media-kind="illustration"] img{object-fit:cover!important;object-position:100% 50%!important}
+.fish25-target[data-fish-media-status="missing"]::before,.fish25-group-photo[data-fish-media-status="missing"]::before,
+.fish25-species-img[data-fish-media-status="missing"]::before,.fp25-hero[data-fish-media-status="missing"]::before,
+.fish25-target[data-fish-media-status="file_unavailable"]::before,.fish25-group-photo[data-fish-media-status="file_unavailable"]::before,
+.fish25-species-img[data-fish-media-status="file_unavailable"]::before,.fp25-hero[data-fish-media-status="file_unavailable"]::before{background-image:none}
+
+.fp25-hero{height:auto!important;aspect-ratio:4/3;min-height:276px;position:relative;margin:-8px -12px 0;border-radius:0 0 20px 20px}
+.fp25-hero>img{position:absolute;inset:0;object-position:50% 40%!important}
+.fp25-hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,#03132119 0%,#03132100 38%,#03132133 65%,#031321f5 100%)!important;backdrop-filter:none}
+.fp25-top{z-index:5;top:12px;left:12px;right:12px}
+.fp25-round{width:37px;height:37px;background:#03192ec4;border-color:#548bb754}
+.fp25-titleblock{position:absolute!important;z-index:4;left:15px;right:15px;bottom:14px!important}
+.fp25-name{font-size:32px;line-height:1.1;font-weight:800}
+.fp25-meta{gap:7px;margin-top:5px}
+.fp25-latin{font-size:12px;line-height:1.3}
+.fp25-family{font-size:11px;line-height:1.3}
+.fp25-chips{gap:6px;margin-top:8px}
+.fp25-chip{font-size:10px;line-height:1.2;padding:5px 8px;background:#06253bcc}
+.fp25-tabs{gap:5px;padding:10px 0 11px}
+.fp25-tab{flex:1 0 auto;min-height:34px;padding:7px 8px;border-radius:11px;font-size:10px;line-height:1.2;background:#09233b}
+.fp25-tab.active{color:#001729;background:linear-gradient(145deg,#53d6ff,#1aa2f3);border-color:#3dbfff}
+.fp25-card{padding:12px;border-radius:15px;border-color:#123b57;background:linear-gradient(145deg,#082036,#061726);margin-bottom:9px}
+.fp25-card-title{font-size:16px;line-height:1.3;gap:8px;margin-bottom:10px}
+.fp25-icon{background:none;color:#38baff;border-radius:0;width:24px;height:24px;font-size:20px}
+.fp25-facts{gap:6px}
+.fp25-fact{padding:3px 5px}
+.fp25-fact-label{font-size:9px;line-height:1.25}
+.fp25-fact-value{font-size:12px;line-height:1.35;margin-top:4px}
+.fp25-lead{font-size:12px;line-height:1.5;color:#c3d7e8;margin-top:9px}
+.fp25-list{font-size:11.5px;line-height:1.5;color:#c3d7e8}
+.fp25-list li{margin:4px 0}
+.fp25-look{display:grid;grid-template-columns:minmax(0,40%) minmax(0,1fr);gap:10px;align-items:center;background:transparent!important;overflow:visible}
+.fp25-look img{height:auto;aspect-ratio:4/3;border-radius:12px;border-color:#1a5575}
+.fp25-note{font-size:10px;line-height:1.5;padding:10px;margin-bottom:9px}
+.fp25-source-sheet{max-height:calc(100dvh - 120px);overflow:auto;overscroll-behavior:contain;box-sizing:border-box}
+.fp25-source-credit{font-size:11px;line-height:1.5;background:#082237;border-color:#174b68}
+.fp25-source-credit b{font-size:11px}
+.fp25-source-credit span{font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+.fp25-source-credit a{display:inline;color:#7bd6ff;text-decoration:underline;text-underline-offset:2px;border:0;border-radius:0;background:none;padding:0;font-size:inherit;font-weight:inherit}
+.fp25-source-sheet p,.fp25-source-list{font-size:11px;line-height:1.5}
+.fp25-source-sheet .fp25-close{z-index:2}
+.fp25-season{gap:3px}
+.fp25-month span{font-size:8px}
+.fp25-month i{height:9px}
+
+@media(max-width:359px){
+  .fish25-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fish25-species-img{min-height:98px}
+  .fish25-species-name{font-size:13px}
+  .fish25-group-card{grid-template-columns:84px minmax(0,1fr) 30px;gap:8px}
+  .fish25-group-photo{height:82px}
+  .fish25-group-copy b{font-size:12px}
+  .fish25-group-head h2{font-size:20px}
+  .fish25-target{flex-basis:82px!important}
+  .fp25-hero{min-height:252px}
+  .fp25-name{font-size:28px}
+  .fp25-facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fp25-fact{border-bottom:0;border-right:1px solid #17384d;padding:3px 4px}
+  .fp25-fact:last-child{border-right:0}
+  .fp25-fact-value{font-size:11px}
+  .fp25-look{grid-template-columns:minmax(0,40%) minmax(0,1fr)}
+  .fp25-look img{width:100%;height:auto}
+}
+@media(prefers-reduced-motion:no-preference){
+  .fish25-species,.fish25-group-card,.fish25-target{transition:border-color .16s,box-shadow .16s}
+  .fish25-species:hover,.fish25-group-card:hover,.fish25-target:hover{border-color:#2a8bbc;box-shadow:0 4px 15px #008fdc16}
+}

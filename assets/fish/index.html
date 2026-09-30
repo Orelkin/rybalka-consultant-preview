@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Изображения рыб — библиотека проекта</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#061420;color:#eaf5ff;font:15px/1.45 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 8px}p{color:#a8c6d9}a{color:#67ceff}input{width:100%;max-width:440px;margin:12px 0 24px;padding:12px;border:1px solid #236481;border-radius:12px;background:#0a2639;color:white;font:inherit}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{border:1px solid #204c64;border-radius:16px;overflow:hidden;background:#0a2030}.card img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#071925}.copy{padding:12px}.name{font-weight:750}.taxon{font-size:12px;color:#91b5cb;margin:4px 0}.kind{font-size:12px;color:#68c7ee}details{margin-top:8px;font-size:12px}summary{cursor:pointer;color:#aec8d7}details p{overflow-wrap:anywhere}#count{margin:8px 0 2px}
+</style>
+</head>
+<body><main>
+<h1>Изображения рыб</h1>
+<p>Единая библиотека проекта. Иллюстрации и фотографии привязаны к конкретным видам; здесь можно посмотреть файлы и их происхождение.</p>
+<p id="count"></p><input id="search" type="search" aria-label="Найти изображение" placeholder="Название рыбы или латинское имя">
+<div id="grid" class="grid"></div>
+</main>
+<script src="../../data/fish-media.js"></script>
+<script>
+(function(){
+  'use strict';
+  const images=window.FISH_MEDIA_V1?.images||[];
+  const grid=document.getElementById('grid'),input=document.getElementById('search');
+  const requested=new URLSearchParams(location.search).get('page');
+  const page=requested?Math.max(1,Number(requested)||1):0;
+  function text(tag,value,cls){const e=document.createElement(tag);e.textContent=value||'';if(cls)e.className=cls;return e;}
+  function render(){
+    const q=input.value.trim().toLocaleLowerCase('ru');
+    let rows=images.filter(r=>(r.catalog_name+' '+r.taxon).toLocaleLowerCase('ru').includes(q));
+    if(page&&!q)rows=rows.slice((page-1)*21,page*21);
+    grid.replaceChildren();
+    for(const r of rows){
+      const card=text('article','','card');
+      const img=document.createElement('img');img.alt=r.catalog_name;img.src=r.path.replace(/^assets\/fish\//,'');
+      img.addEventListener('error',()=>{if(!img.dataset.fallback){img.dataset.fallback='1';img.src='placeholder.svg';}});
+      card.append(img);
+      const copy=text('div','','copy');copy.append(text('div',r.catalog_name,'name'),text('div',r.taxon,'taxon'),text('div',r.kind==='photo'?'Фотография':r.kind==='illustration'?'Иллюстрация':'Изображение готовится','kind'));
+      const details=document.createElement('details');details.append(text('summary','Источник и проверка'),text('p',r.review_note));
+      if(r.source?.url&&/^https?:\/\//.test(r.source.url)){
+        const a=text('a','Страница источника');a.href=r.source.url;a.target='_blank';a.rel='noopener noreferrer';details.append(a);
+      }
+      details.append(text('p',[r.source?.author,r.source?.license].filter(Boolean).join(' · ')));
+      copy.append(details);card.append(copy);grid.append(card);
+    }
+    document.getElementById('count').textContent='В каталоге '+images.length+' видов · показано '+rows.length;
+  }
+  input.addEventListener('input',render);render();
+})();
+</script></body></html>
