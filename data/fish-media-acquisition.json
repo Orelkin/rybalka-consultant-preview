@@ -158,48 +158,40 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "salvelinus-alpinus",
       "catalog_name": "Голец арктический",
       "taxon": "Salvelinus alpinus",
-      "id": "salvelinus-alpinus",
-      "path": "assets/fish/salvelinus-alpinus.jpg",
+      "path": "assets/fish/salvelinus-alpinus-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Salvelinus_alpinus_(1).jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Salvelinus_alpinus_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Chmee2",
-        "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Chmee2\" title=\"User:Chmee2\">Chmee2</a>",
-        "license": "CC BY-SA 3.0",
-        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-        "credit": "Own work",
-        "description": "Salvelinus alpinus, Norway",
-        "categories": [
-          "Salvelinus alpinus",
-          "GFDL",
-          "Taken with Nikon D40x",
-          "CC-BY-SA-2.5,2.0,1.0",
-          "License migration redundant",
-          "Self-published work",
-          "Files by User:Chmee2",
-          "Files by User:Chmee2 from Norway"
-        ],
-        "file_title": "File:Salvelinus alpinus (1).jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Chmee2",
+        "reference_license": "CC BY-SA 3.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Salvelinus_alpinus_(1).jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/salvelinus-alpinus-underwater-v1.png",
+        "sha256": "14fb006e689cf4cc544ac5c7591d684b84755d1890c6fe457479288d4f60a51a",
+        "bytes": 2511803
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "2f0557ecb96937a6368e7074ac724ee2555e5e7f098b7d144705901dadf67401",
-        "bytes": 2446905,
-        "width": 3872,
-        "height": 2592,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:36:56.545223+00:00"
-      },
-      "sourceTaxon": "Salvelinus alpinus",
-      "method": "existing_exact_file"
+        "sha256": "14fb006e689cf4cc544ac5c7591d684b84755d1890c6fe457479288d4f60a51a",
+        "bytes": 2511803,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-7230bbec-ac7d-4150-a4ca-187ab9e8dcfc",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
       "id": "oncorhynchus-gorbuscha",
@@ -816,53 +808,39 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "salvelinus-leucomaenis",
       "catalog_name": "Кунжа",
       "taxon": "Salvelinus leucomaenis",
-      "id": "salvelinus-leucomaenis",
-      "path": "assets/fish/salvelinus-leucomaenis.jpg",
+      "path": "assets/fish/salvelinus-leucomaenis-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Salvelinus_leucomaenis_01.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Salvelinus_leucomaenis_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Σ64",
-        "author_html": "<a href=\"https://ja.wikipedia.org/wiki/user:%CE%A364\" class=\"extiw\" title=\"ja:user:Σ64\">Σ64</a>",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0",
-        "credit": "Own work",
-        "description": "イワナ (学名: Salvelinus leucomaenis )",
-        "categories": [
-          "Salvelinus leucomaenis",
-          "GFDL",
-          "License migration redundant",
-          "Self-published work"
-        ],
-        "file_title": "File:Salvelinus leucomaenis 01.jpg",
-        "web_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Salvelinus_leucomaenis_01.jpg/1280px-Salvelinus_leucomaenis_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Σ64",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Salvelinus_leucomaenis_01.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Для приложения сохранена официальная уменьшенная копия Wikimedia; оригинал сохранён в архивной папке проекта. Визуальная проверка отдельно.",
-      "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": false,
-        "sha256": "3e5d8882a2206d47b834fbdd202cbee4ef8ef030096cd4a48c3e5cdc44e136ff",
-        "bytes": 320308,
-        "width": 1280,
-        "height": 853,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:05.396823+00:00",
-        "derived_by": "Wikimedia thumbnail"
-      },
-      "sourceTaxon": "Salvelinus leucomaenis",
-      "method": "existing_exact_file",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
       "original_archive": {
-        "path": "fish/media-originals/downloaded/salvelinus-leucomaenis.jpg",
-        "sha256": "5dbe6204e88b091ec9b4688784a141bc13b6ed7f1bd40fec2bdc197e5884171a",
-        "bytes": 3447270,
-        "width": 3900,
-        "height": 2600,
-        "mime": "image/jpeg"
+        "path": "fish/media-originals/generated/salvelinus-leucomaenis-underwater-v1.png",
+        "sha256": "e291f3639c29d9ee10f4b8eb0c92e73e8351806d8970b1ceaeb62b506d96b1f3",
+        "bytes": 2449788
+      },
+      "check": {
+        "sha256": "e291f3639c29d9ee10f4b8eb0c92e73e8351806d8970b1ceaeb62b506d96b1f3",
+        "bytes": 2449788,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-582929df-b595-4725-8ea3-466987668954",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       }
     },
     {
@@ -1588,52 +1566,39 @@
       }
     },
     {
+      "id": "parahucho-perryi",
       "catalog_name": "Таймень сахалинский",
       "taxon": "Parahucho perryi",
-      "id": "parahucho-perryi",
-      "path": "assets/fish/parahucho-perryi.jpg",
+      "path": "assets/fish/parahucho-perryi-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Parahucho_perryi_in_Gifu_World_Fresh_Water_Aquarium_-_1.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Parahucho_perryi_in_Gifu_World_Fresh_Water_Aquarium_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "KKPCW",
-        "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:KKPCW\" title=\"User:KKPCW\">KKPCW</a>",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "credit": "Own work",
-        "description": "岐阜県各務原市にあるアクア・トトぎふで飼育されてる日本最大の淡水魚「イトウ」。",
-        "categories": [
-          "Parahucho perryi",
-          "Self-published work",
-          "Animals in Gifu World Fresh Water Aquarium"
-        ],
-        "file_title": "File:Parahucho perryi in Gifu World Fresh Water Aquarium - 1.jpg",
-        "web_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Parahucho_perryi_in_Gifu_World_Fresh_Water_Aquarium_-_1.jpg/1280px-Parahucho_perryi_in_Gifu_World_Fresh_Water_Aquarium_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "KKPCW",
+        "reference_license": "CC BY-SA 4.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Parahucho_perryi_in_Gifu_World_Fresh_Water_Aquarium_-_1.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Для приложения сохранена официальная уменьшенная копия Wikimedia; оригинал сохранён в архивной папке проекта. Визуальная проверка отдельно.",
-      "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": false,
-        "sha256": "8d5ba6c2a803406dbe4d3a09195027425fe54cf72ddbc6d7e3c9e095cce27efb",
-        "bytes": 181018,
-        "width": 1280,
-        "height": 720,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:14.919475+00:00",
-        "derived_by": "Wikimedia thumbnail"
-      },
-      "sourceTaxon": "Parahucho perryi",
-      "method": "existing_exact_file",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
       "original_archive": {
-        "path": "fish/media-originals/downloaded/parahucho-perryi.jpg",
-        "sha256": "678fb419762da31fe8ee593e18d0631309c5ee3d8f3e4a89da33fd442ffe35ba",
-        "bytes": 14000863,
-        "width": 5145,
-        "height": 2893,
-        "mime": "image/jpeg"
+        "path": "fish/media-originals/generated/parahucho-perryi-underwater-v1.png",
+        "sha256": "0faf89ac2dcae0b352291aee394149f38f9d4e1909d7d25a3ed2e098bb3a0e82",
+        "bytes": 2515485
+      },
+      "check": {
+        "sha256": "0faf89ac2dcae0b352291aee394149f38f9d4e1909d7d25a3ed2e098bb3a0e82",
+        "bytes": 2515485,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-f7abcfc2-8e0a-4c9e-a718-5ac108f631ec",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       }
     },
     {
@@ -1731,181 +1696,149 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "thymallus-grubii",
       "catalog_name": "Хариус амурский",
       "taxon": "Thymallus grubii",
-      "id": "thymallus-grubii",
-      "path": "assets/fish/thymallus-grubii.jpg",
+      "path": "assets/fish/thymallus-grubii-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://www.inaturalist.org/observations/284443872",
-        "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/511193149/original.jpg",
-        "author": "Ochirnima Nimaev",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "photo_url": "https://www.inaturalist.org/photos/511193149",
-        "provider": "iNaturalist",
-        "description": "Thymallus grubii — research-grade observation"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Ochirnima Nimaev",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://www.inaturalist.org/observations/284443872"
       },
-      "kind": "photo",
-      "review_note": "Сохранена фотография авторского наблюдения iNaturalist, определённого до этого вида и отмеченного research grade. Автор и лицензия сохранены. Визуальная проверка отдельно.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска сопоставлена с ориентиром; раскрытый спинной плавник реконструирован иллюстративно и требует отдельной видовой проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/thymallus-grubii-underwater-v1.png",
+        "sha256": "8c6733f6e21ddbe7a9b6ad8c52e1fb4409158d62f7a9fc2a8879e2b4207ea1ee",
+        "bytes": 2369610
+      },
       "check": {
-        "license": "verified_current_inaturalist_metadata",
-        "taxon": "exact_observation_taxon",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "a667ca59e1c4853bdea5be5327bf868210871fe13906972742fe2d68639e7e1c",
-        "bytes": 2787044,
-        "width": 2048,
-        "height": 1365,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:53:18.315333+00:00"
-      },
-      "attempts": [
-        {
-          "candidate": "File:Amur grayling.png",
-          "reason": "Expected taxon is absent from title, categories and description"
-        },
-        {
-          "candidate": "File:Thymallus baikalensis, Baikal-Museum, Listvyanka, Irkutsk Oblast, Russia - 20080405.jpg",
-          "reason": "Expected taxon is absent from title, categories and description"
-        },
-        {
-          "candidate": "File:Riverine Form of Black Grayling.png",
-          "reason": "Expected taxon is absent from title, categories and description"
-        },
-        {
-          "candidate": "File:Lake Form Baikal black Graylings.png",
-          "reason": "Expected taxon is absent from title, categories and description"
-        },
-        {
-          "candidate": "File:Baikal Grayling Postage Stamp 1966.png",
-          "reason": "Expected taxon is absent from title, categories and description"
-        }
-      ],
-      "sourceTaxon": "Thymallus grubii",
-      "method": "exact_research_grade_observation"
+        "sha256": "8c6733f6e21ddbe7a9b6ad8c52e1fb4409158d62f7a9fc2a8879e2b4207ea1ee",
+        "bytes": 2369610,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-6c76f7c5-b1c6-4690-8eba-48c88e96e57e",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
+      "id": "thymallus-thymallus",
       "catalog_name": "Хариус европейский",
       "taxon": "Thymallus thymallus",
-      "id": "thymallus-thymallus",
-      "path": "assets/fish/thymallus-thymallus.jpg",
+      "path": "assets/fish/thymallus-thymallus-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Thymallus_thymallus_acqMilano.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Thymallus_thymallus_acqMilano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Marrabbio2",
-        "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Marrabbio2\" title=\"User:Marrabbio2\">Marrabbio2</a>",
-        "license": "CC BY-SA 3.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-        "credit": "Own work",
-        "description": "Thymallus thymallus in Acquario Civico, Milan",
-        "categories": [
-          "Thymallus thymallus",
-          "Self-published work",
-          "Images with extracted images"
-        ],
-        "file_title": "File:Thymallus thymallus acqMilano.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Marrabbio2",
+        "reference_license": "CC BY-SA 3.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Thymallus_thymallus_acqMilano.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска сопоставлена с ориентиром; раскрытый спинной плавник реконструирован иллюстративно и требует отдельной видовой проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/thymallus-thymallus-underwater-v1.png",
+        "sha256": "923e3da9fe76992163626039f7e4c05a6d81386f2ccb07b47b580599326b05ee",
+        "bytes": 2536127
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "b51cc559f09051c8e7e2beb6dd1756f78cf95c695cc4c173feac050a7ee1c22a",
-        "bytes": 883482,
-        "width": 1772,
-        "height": 889,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:15.984038+00:00"
-      },
-      "sourceTaxon": "Thymallus thymallus",
-      "method": "existing_exact_file"
+        "sha256": "923e3da9fe76992163626039f7e4c05a6d81386f2ccb07b47b580599326b05ee",
+        "bytes": 2536127,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-7fad1690-3147-4509-9a1e-b9fccbddc901",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
+      "id": "thymallus-brevirostris",
       "catalog_name": "Хариус монгольский",
       "taxon": "Thymallus brevirostris",
-      "id": "thymallus-brevirostris",
-      "path": "assets/fish/thymallus-brevirostris.jpg",
+      "path": "assets/fish/thymallus-brevirostris-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Thymallus_brevirostris_657312.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Thymallus_brevirostris_657312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Alexander A. Fomichev",
-        "author_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/10832\">Alexander A. Fomichev</a>",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0",
-        "credit": "https://www.inaturalist.org/photos/657312",
-        "description": "Mongolian Grayling ( Thymallus brevirostris )",
-        "categories": [
-          "Fish of Russia",
-          "Thymallus brevirostris",
-          "Media from iNaturalist",
-          "INaturalist images reviewed by iNaturalistReviewBot",
-          "Russia photographs taken on 2013-04-13",
-          "Files with coordinates missing SDC location of creation",
-          "Uploaded with iNaturalist2Commons"
-        ],
-        "file_title": "File:Thymallus brevirostris 657312.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Alexander A. Fomichev",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Thymallus_brevirostris_657312.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска сопоставлена с ориентиром; раскрытый спинной плавник реконструирован иллюстративно и требует отдельной видовой проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/thymallus-brevirostris-underwater-v1.png",
+        "sha256": "4781606a5f0815cb9778622f43b3749ac7d3d90aba88d0a66e5ae0cd2a68705a",
+        "bytes": 2601364
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "a4b42437fa900af1f819475c8c383ce5725d469c25102de4b95d9d1e03be8208",
-        "bytes": 724264,
-        "width": 2048,
-        "height": 1410,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:16.765020+00:00"
-      },
-      "sourceTaxon": "Thymallus brevirostris",
-      "method": "existing_exact_file"
+        "sha256": "4781606a5f0815cb9778622f43b3749ac7d3d90aba88d0a66e5ae0cd2a68705a",
+        "bytes": 2601364,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-00ed1d28-1fa3-437a-96fb-c579b3e50633",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
+      "id": "oncorhynchus-tshawytscha",
       "catalog_name": "Чавыча",
       "taxon": "Oncorhynchus tshawytscha",
-      "id": "oncorhynchus-tshawytscha",
-      "path": "assets/fish/oncorhynchus-tshawytscha.jpg",
+      "path": "assets/fish/oncorhynchus-tshawytscha-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Adult_king_salmon_chinook_fish_oncorhynchus_tshawytscha.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Adult_king_salmon_chinook_fish_oncorhynchus_tshawytscha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Young Chuck, U.S. Fish and Wildlife Service",
-        "author_html": "Young Chuck, U.S. Fish and Wildlife Service",
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-        "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/adult-king-salmon-chinook-fish-oncorhynchus-tshawytscha.jpg",
-        "description": "Image title: Adult king salmon chinook fish oncorhynchus tshawytscha Image from Public domain images website, http://www.public-domain-image.com/full-image/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/adult-king-salmon-chinook-fish-oncorhynchus-tshawytscha.jpg.html",
-        "categories": [
-          "Oncorhynchus tshawytscha",
-          "PD-author",
-          "Images uploaded by Fæ",
-          "Public-domain-image.com"
-        ],
-        "file_title": "File:Adult king salmon chinook fish oncorhynchus tshawytscha.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "NOAA Fisheries",
+        "reference_license": "Not independently rechecked; species reference only",
+        "reference_url": "https://www.fisheries.noaa.gov/species/chinook-salmon",
+        "reference_file": "fish/media-originals/references/oncorhynchus-tshawytscha-noaa.png"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Дополнительный видовой ориентир NOAA заменил обрезанное прежнее фото; экспертная проверка не заявляется.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/oncorhynchus-tshawytscha-underwater-v1.png",
+        "sha256": "66bafdb4a65f3c86c029d78fec5ffe149cf129e1aacbc890aa409a8f516aabf9",
+        "bytes": 2200118
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "2c66aecd147dae103e500d2fd1fe421b712475e5a53fc3944c1dadb51a24853d",
-        "bytes": 90365,
-        "width": 1920,
-        "height": 1440,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:16.709207+00:00"
-      },
-      "sourceTaxon": "Oncorhynchus tshawytscha",
-      "method": "existing_exact_file"
+        "sha256": "66bafdb4a65f3c86c029d78fec5ffe149cf129e1aacbc890aa409a8f516aabf9",
+        "bytes": 2200118,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-74206f56-2cfd-416a-84f7-a9bb0832eae4",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
       "catalog_name": "Шип",
@@ -2184,38 +2117,40 @@
       }
     },
     {
+      "id": "thymallus-arcticus",
       "catalog_name": "Хариус сибирский",
       "taxon": "Thymallus arcticus",
-      "id": "thymallus-arcticus",
-      "path": "assets/fish/thymallus-arcticus.jpg",
-      "kind": "photo",
+      "path": "assets/fish/thymallus-arcticus-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://www.inaturalist.org/observations/403646506",
-        "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/741145018/original.jpg",
-        "author": "Matt Berger",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "photo_url": "https://www.inaturalist.org/photos/741145018",
-        "provider": "iNaturalist",
-        "description": "Thymallus arcticus — research-grade observation"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Matt Berger",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://www.inaturalist.org/observations/403646506"
       },
-      "sourceTaxon": "Thymallus arcticus",
-      "method": "exact_research_grade_observation",
-      "review_note": "Сохранена фотография авторского наблюдения iNaturalist, определённого до этого вида и отмеченного research grade. Автор и лицензия сохранены. Визуальная проверка отдельно. Прежняя картинка не используется в интерфейсе: это фрагмент карточки, общая таблица видов или неполное изображение. Оригинал сохранён для истории проекта.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска сопоставлена с ориентиром; раскрытый спинной плавник реконструирован иллюстративно и требует отдельной видовой проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/thymallus-arcticus-underwater-v1.png",
+        "sha256": "ce0da3b4592cc111235789fa543470baf719d306196b121ad929d837ee7b43de",
+        "bytes": 2603330
+      },
       "check": {
-        "license": "verified_current_inaturalist_metadata",
-        "taxon": "exact_observation_taxon",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "04817d76e2effbf513d17cf81aa515ac2fb6d81eecb928d16f6a5435e2dc5a67",
-        "bytes": 544888,
-        "width": 1536,
-        "height": 2048,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T18:11:25.908064+00:00"
-      },
-      "replace_legacy": true
+        "sha256": "ce0da3b4592cc111235789fa543470baf719d306196b121ad929d837ee7b43de",
+        "bytes": 2603330,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-01778a89-0ed4-463d-9877-e950c4cef100",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
+      }
     },
     {
       "catalog_name": "Чехонь",
