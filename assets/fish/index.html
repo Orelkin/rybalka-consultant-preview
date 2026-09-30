@@ -30,7 +30,7 @@
     grid.replaceChildren();
     for(const r of rows){
       const card=text('article','','card');
-      const img=document.createElement('img');img.alt=r.catalog_name;img.loading='lazy';img.decoding='async';img.src=r.path.replace(/^assets\/fish\//,'');
+      const img=document.createElement('img');img.alt=r.catalog_name;img.loading='lazy';img.decoding='async';img.src=(r.thumbnail?.path||r.path).replace(/^assets\/fish\//,'');
       img.addEventListener('error',()=>{if(!img.dataset.fallback){img.dataset.fallback='1';img.src='placeholder.svg';}});
       card.append(img);
       const copy=text('div','','copy');copy.append(text('div',r.catalog_name,'name'),text('div',r.taxon,'taxon'),text('div',r.kind==='photo'?'Фотография':r.kind==='illustration'?'Иллюстрация':'Изображение готовится','kind'));
@@ -39,6 +39,10 @@
         const a=text('a','Страница источника');a.href=r.source.url;a.target='_blank';a.rel='noopener noreferrer';details.append(a);
       }
       details.append(text('p',[r.source?.author,r.source?.license].filter(Boolean).join(' · ')));
+      if(r.source?.reference_url&&/^https?:\/\//.test(r.source.reference_url)){
+        const a=text('a','Фото-ориентир');a.href=r.source.reference_url;a.target='_blank';a.rel='noopener noreferrer';details.append(a);
+        details.append(text('p',[r.source.reference_author,r.source.reference_license].filter(Boolean).join(' · ')));
+      }
       copy.append(details);card.append(copy);grid.append(card);
     }
     document.getElementById('count').textContent='В каталоге '+images.length+' видов · показано '+rows.length;

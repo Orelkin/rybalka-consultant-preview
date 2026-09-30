@@ -124,3 +124,9 @@
   .fish25-species,.fish25-group-card,.fish25-target{transition:border-color .16s,box-shadow .16s}
   .fish25-species:hover,.fish25-group-card:hover,.fish25-target:hover{border-color:#2a8bbc;box-shadow:0 4px 15px #008fdc16}
 }
+.fish25-media-frame[data-fish-media-loading="true"]::after,
+.fp25-media-frame[data-fish-media-loading="true"]::after{
+  content:"Загрузка изображения…";position:absolute;inset:0;display:grid;place-items:center;
+  color:#8eb8cc;font-size:11px;line-height:1.4;text-align:center;padding:8px;pointer-events:none;
+  background:linear-gradient(135deg,#082637,#061724);
+}

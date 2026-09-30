@@ -1186,35 +1186,37 @@
       "catalog_name": "Подкаменщик русский",
       "taxon": "Cottus koshewnikowi",
       "id": "cottus-koshewnikowi",
-      "path": "assets/fish/cottus-koshewnikowi.jpg",
+      "path": "assets/fish/cottus-koshewnikowi-underwater-v1.png",
       "status": "saved_needs_visual_review",
       "source": {
-        "url": "https://www.inaturalist.org/observations/19055748",
-        "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/29232167/original.jpg",
-        "author": "Vsevolod Rudyi",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "photo_url": "https://www.inaturalist.org/photos/29232167",
-        "provider": "iNaturalist",
-        "description": "Cottus koshewnikowi — research-grade observation"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Vsevolod Rudyi",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://www.inaturalist.org/observations/19055748"
       },
-      "kind": "photo",
-      "review_note": "Сохранена фотография авторского наблюдения iNaturalist, определённого до этого вида и отмеченного research grade. Автор и лицензия сохранены. Визуальная проверка отдельно.",
+      "kind": "illustration",
+      "review_note": "Подводная проектная иллюстрация. Оформление просмотрено; это не фотография и не экспертно подтверждённое определение вида.",
       "check": {
-        "license": "verified_current_inaturalist_metadata",
-        "taxon": "exact_observation_taxon",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "cc3763046099446da8778fc14470b0b1ce24f8833a6af728e4e3277e0d001cd8",
-        "bytes": 419114,
-        "width": 2048,
-        "height": 1536,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:53:15.827765+00:00"
+        "sha256": "d07fe558553b7ceb420f14924ab2fe1cbccb3e34285361c54e4f765b38fe18c8",
+        "bytes": 2600533,
+        "width": 1448,
+        "height": 1086,
+        "mime": "image/png",
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-d7002b94-b612-4fca-9b3a-f24f45df3ac7"
       },
       "attempts": [],
       "sourceTaxon": "Cottus koshewnikowi",
-      "method": "exact_research_grade_observation"
+      "method": "OpenAI built-in imagegen; underwater style reference and species photograph",
+      "original_archive": {
+        "path": "fish/media-originals/generated/cottus-koshewnikowi-underwater-v1.png",
+        "sha256": "d07fe558553b7ceb420f14924ab2fe1cbccb3e34285361c54e4f765b38fe18c8",
+        "bytes": 2600533
+      }
     },
     {
       "catalog_name": "Пузанок",
@@ -1400,40 +1402,36 @@
       "catalog_name": "Сельдь атлантическая",
       "taxon": "Clupea harengus",
       "id": "clupea-harengus",
-      "path": "assets/fish/clupea-harengus.jpg",
+      "path": "assets/fish/clupea-harengus-underwater-v1.png",
       "status": "saved_needs_visual_review",
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Clupea_harengus_alive.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Clupea_harengus_alive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "asiafuoco",
-        "author_html": "asiafuoco",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0",
-        "credit": "https://www.inaturalist.org/observations/231687032",
-        "description": "Clupea harengus , Saint-Louis de Kent, New Brunswick, Canada",
-        "categories": [
-          "Clupea harengus",
-          "Media from iNaturalist",
-          "INaturalist images reviewed by iNaturalistReviewBot"
-        ],
-        "file_title": "File:Clupea harengus alive.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "asiafuoco",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Clupea_harengus_alive.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "kind": "illustration",
+      "review_note": "Подводная проектная иллюстрация. Оформление просмотрено; это не фотография и не экспертно подтверждённое определение вида.",
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "a6fe8dd4a7fd9fd6d96f440485b2ceb3873082141fff1b105db1d3e1f4cbf4d5",
-        "bytes": 561523,
-        "width": 1331,
-        "height": 1019,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:11.877250+00:00"
+        "sha256": "0801ee83133280cdfec97d9a522d684df214909857a4c68fe8f74dfa36827742",
+        "bytes": 2107977,
+        "width": 1448,
+        "height": 1086,
+        "mime": "image/png",
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-85d6ca89-a0e4-4aba-a193-66fc37d184c7"
       },
       "sourceTaxon": "Clupea harengus",
-      "method": "existing_exact_file"
+      "method": "OpenAI built-in imagegen; underwater style reference and species photograph",
+      "original_archive": {
+        "path": "fish/media-originals/generated/clupea-harengus-underwater-v1.png",
+        "sha256": "0801ee83133280cdfec97d9a522d684df214909857a4c68fe8f74dfa36827742",
+        "bytes": 2107977
+      }
     },
     {
       "catalog_name": "Сельдь черноморская",

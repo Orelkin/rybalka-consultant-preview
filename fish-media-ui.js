@@ -72,13 +72,13 @@
   }
   function src(fish) {
     const entry = entryFor(fish);
-    return stateFor(entry) === 'missing' ? PLACEHOLDER : localPath(entry.path);
+    return stateFor(entry) === 'missing' ? PLACEHOLDER : localPath(entry.thumbnail && entry.thumbnail.path) || localPath(entry.path);
   }
   function attrs(fish) {
     const entry = entryFor(fish);
     const name = nameFor(fish, entry);
     // The existing renderers add their own escaped alt; hydration also sets it as text.
-    return `src="${escape(src(fish))}" data-fish-media-key="${escape(text(entry && entry.catalog_name) || name)}" data-fish-media-name="${escape(name)}" decoding="async"`;
+    return `src="${escape(src(fish))}" data-fish-media-key="${escape(text(entry && entry.catalog_name) || name)}" data-fish-media-name="${escape(name)}" loading="lazy" decoding="async"`;
   }
   function within(root, selector) {
     if (!root) return [];
@@ -108,7 +108,8 @@
     if (frame) {
       frame.dataset.fishMediaStatus = state;
       frame.dataset.fishMediaKind = img.dataset.fishMediaKind;
-      const imagePath = state === 'file_unavailable' || state === 'missing' ? PLACEHOLDER : localPath(entry.path);
+      frame.dataset.fishMediaLoading = String(!(img.complete && img.naturalWidth > 0));
+      const imagePath = state === 'file_unavailable' || state === 'missing' ? PLACEHOLDER : localPath(img.getAttribute('src')) || src(entry);
       // localPath only permits a static, ASCII path, so this cannot inject CSS or fetch an external image.
       frame.style.setProperty('--fish-photo', `url("${imagePath}")`);
       frame.classList.add(frame.className.indexOf('fp25-') !== -1 ? 'fp25-media-frame' : 'fish25-media-frame');
@@ -141,7 +142,9 @@
     for (const img of within(root, IMAGE_SELECTOR)) {
       const entry = entryFor(img.dataset.fishMediaKey);
       const name = nameFor(img.dataset.fishMediaName, entry);
-      const target = src(entry || img.dataset.fishMediaKey);
+      const large = !!img.closest('.fp25-hero,.fp25-look,.fp-hero,.fp-photo-row');
+      const target = large && stateFor(entry) !== 'missing' ? localPath(entry.path) : src(entry || img.dataset.fishMediaKey);
+      img.loading = large ? 'eager' : 'lazy';
       if (failedImages.has(img) && failedImages.get(img) !== (localPath(entry && entry.path) || PLACEHOLDER)) failedImages.delete(img);
       if (!bound.has(img)) {
         bound.add(img);
@@ -180,7 +183,9 @@
     const parts = [author ? escape(author) : '', license ? (licenseUrl ? `<a href="${escape(licenseUrl)}" target="_blank" rel="noopener noreferrer">${escape(license)}</a>` : escape(license)) : '', sourceUrl ? `<a href="${escape(sourceUrl)}" target="_blank" rel="noopener noreferrer">Источник</a>` : ''].filter(Boolean);
     const review = state === 'verified_visual' ? 'Видовое соответствие проверено.' : 'Видовое соответствие требует визуальной проверки.';
     const note = text(entry.review_note);
-    return `<div class="fp25-source-credit" data-image-credit data-fish-media-credit><b>${origin}</b>${parts.length ? `<span>${parts.join(' · ')}</span>` : ''}<span>${escape(review)}${note ? ' ' + escape(note) : ''}</span></div>`;
+    const referenceUrl = externalLink(source.reference_url);
+    const reference = referenceUrl ? `<span>Фото-ориентир: ${escape(text(source.reference_author))} · ${escape(text(source.reference_license))} · <a href="${escape(referenceUrl)}" target="_blank" rel="noopener noreferrer">Источник</a></span>` : '';
+    return `<div class="fp25-source-credit" data-image-credit data-fish-media-credit><b>${origin}</b>${parts.length ? `<span>${parts.join(' · ')}</span>` : ''}${reference}<span>${escape(review)}${note ? ' ' + escape(note) : ''}</span></div>`;
   }
   function decorate(root) {
     root = root || document;
