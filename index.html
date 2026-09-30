@@ -6,25 +6,87 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<meta name="theme-color" content="#04111d">
 <title>Рыбалка — консультант</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#04111d;color:#edf6ff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+#preview-status{position:fixed;inset:0;padding:24px;box-sizing:border-box;background:#04111d;font-size:20px;line-height:1.45}
+#preview-status small{display:block;margin-top:10px;color:#9fb7cc;font-size:14px}
+#app-frame{position:fixed;inset:0;width:100%;height:100%;border:0;background:#04111d;z-index:10}
+</style>
 </head>
 <body>
-<div id="preview-loader" style="font-family:system-ui;padding:24px;color:#edf6ff;background:#04111d;min-height:100vh">Загрузка полной версии…</div>
-<script>window.__APP_CHUNKS=new Array(11);</script>
-<script src="bundle/chunk00.js?v=stage2-20260930b"></script><script src="bundle/chunk01.js?v=stage2-20260930b"></script><script src="bundle/chunk02.js?v=stage2-20260930b"></script><script src="bundle/chunk03.js?v=stage2-20260930b"></script><script src="bundle/chunk04.js?v=stage2-20260930b"></script><script src="bundle/chunk05.js?v=stage2-20260930b"></script><script src="bundle/chunk06.js?v=stage2-20260930b"></script><script src="bundle/chunk07.js?v=stage2-20260930b"></script><script src="bundle/chunk08.js?v=stage2-20260930b"></script><script src="bundle/chunk09.js?v=stage2-20260930b"></script><script src="bundle/chunk10.js?v=stage2-20260930b"></script>
+<div id="preview-status">Загрузка полной версии…<small id="preview-progress">Подготовка файлов</small></div>
 <script>
 (function(){
-  const ok=window.__APP_CHUNKS.length===11 &&
-    window.__APP_CHUNKS.every(x=>typeof x==='string'&&x.length>0);
-  const html=ok?window.__APP_CHUNKS.join(''):'';
-  if(!ok || html.length<6000000){
-    document.getElementById('preview-loader').innerHTML=
-      '<b>Preview не загрузился полностью.</b><br>Обновите страницу без кэша.';
-    return;
+  const COUNT=11;
+  const VERSION='stage2-20260930c';
+  const MIN_SIZE=6000000;
+  window.__APP_CHUNKS=new Array(COUNT);
+
+  const status=document.getElementById('preview-status');
+  const progress=document.getElementById('preview-progress');
+  let loaded=0;
+
+  function chunkPath(i, attempt){
+    const n=String(i).padStart(2,'0');
+    return 'bundle/chunk'+n+'.js?v='+VERSION+(attempt?'-r'+attempt:'');
   }
-  document.open();
-  document.write(html);
-  document.close();
+
+  function loadChunk(i, attempt){
+    attempt=attempt||0;
+    return new Promise(function(resolve,reject){
+      const s=document.createElement('script');
+      s.async=true;
+      s.src=chunkPath(i,attempt);
+      s.onload=function(){
+        if(typeof window.__APP_CHUNKS[i]==='string' && window.__APP_CHUNKS[i].length>0){
+          loaded++;
+          progress.textContent='Загружено '+loaded+' из '+COUNT;
+          resolve();
+        }else{
+          reject(new Error('Пустой фрагмент '+i));
+        }
+      };
+      s.onerror=function(){ reject(new Error('Ошибка загрузки фрагмента '+i)); };
+      document.head.appendChild(s);
+    }).catch(function(err){
+      if(attempt<2) return loadChunk(i,attempt+1);
+      throw err;
+    });
+  }
+
+  Promise.all(Array.from({length:COUNT},function(_,i){return loadChunk(i,0);}))
+    .then(function(){
+      const ok=window.__APP_CHUNKS.every(function(x){return typeof x==='string'&&x.length>0;});
+      const html=ok?window.__APP_CHUNKS.join(''):'';
+      if(!ok || html.length<MIN_SIZE) throw new Error('Полная версия собрана не полностью');
+
+      progress.textContent='Запуск приложения…';
+
+      const frame=document.createElement('iframe');
+      frame.id='app-frame';
+      frame.title='Рыбалка — консультант';
+      frame.setAttribute('allow','geolocation');
+      document.body.appendChild(frame);
+
+      frame.srcdoc=html;
+
+      frame.addEventListener('load',function(){
+        status.style.display='none';
+      },{once:true});
+
+      setTimeout(function(){
+        if(status.style.display!=='none'){
+          status.style.display='none';
+        }
+      },4000);
+    })
+    .catch(function(err){
+      status.innerHTML='<b>Preview не загрузился полностью.</b><br><small>'+
+        String(err && err.message ? err.message : err)+
+        '<br>Обнови страницу ещё раз. Если ошибка повторится — пришли скрин.</small>';
+    });
 })();
 </script>
 </body>
