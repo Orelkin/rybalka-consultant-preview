@@ -67,9 +67,9 @@
       if(exportUrl)URL.revokeObjectURL(exportUrl);
       exportUrl=URL.createObjectURL(new Blob([text],{type:'application/json;charset=utf-8'}));
       const panel=host.querySelector('.pd-export-preview');
-      const a=panel.querySelector('a');a.href=exportUrl;a.download=`rybalka-diary-${new Date().toISOString().slice(0,10)}.json`;
+      const a=panel.querySelector('a');a.href=exportUrl;a.download=`rybalka-personal-data-${new Date().toISOString().slice(0,10)}.json`;
       panel.querySelector('textarea').value=text;panel.hidden=false;
-      message(`Копия подготовлена: ${backup.data.diary.length} записей, включая архив. Скачайте файл и сохраните его вместе с архивом проекта.`);
+      message(`Копия подготовлена: рыбалок — ${backup.data.diary.length}, снастей — ${(backup.data.gear||[]).length}, включая архив. Сохраните файл вместе с архивом проекта.`);
     }catch(e){message(e.message,true);}
   });
   host.querySelector('[data-action="copy-backup"]').addEventListener('click',async()=>{
@@ -91,7 +91,7 @@
       if(file.size>8*1024*1024)throw new Error('Файл слишком большой: максимум 8 МБ.');
       const data=JSON.parse(await file.text());
       const validated=PersonalStore.validateImport(data);pendingImport=data;
-      importPreview.querySelector('p').textContent=`Копия «${file.name}» проверена. Записей: ${validated.count}. Новые записи будут добавлены, более новые версии заменят записи с тем же идентификатором. Дубликаты будут пропущены; при конфликте сохранится запись этого браузера.`;
+      importPreview.querySelector('p').textContent=`Копия проверена. Рыбалок: ${validated.count}, снастей: ${validated.gearCount||0}. Новые записи будут добавлены, более новые версии заменят записи с тем же идентификатором. При конфликте сохранится запись этого браузера.`;
       importPreview.hidden=false;
     }catch(e){message(`Импорт не выполнен: ${e.message}`,true);}finally{input.value='';}
   });
@@ -100,7 +100,8 @@
     try{
       const result=await PersonalStore.importBackup(pendingImport);
       pendingImport=null;importPreview.hidden=true;await refresh();
-      message(`Импорт завершён: добавлено ${result.added}, обновлено ${result.updated}, без изменений ${result.unchanged}, конфликтов ${result.conflicts}.`);
+      const gear=result.gear||{added:0,updated:0,conflicts:0};
+      message(`Данные объединены. Рыбалки: добавлено ${result.added}, обновлено ${result.updated}. Снасти: добавлено ${gear.added}, обновлено ${gear.updated}. Конфликтов: ${result.conflicts+gear.conflicts}.`);
     }catch(e){message(`Импорт не выполнен: ${e.message}`,true);}finally{importConfirm.disabled=false;}
   });
   host.querySelector('[data-action="cancel-import"]').addEventListener('click',()=>{pendingImport=null;importPreview.hidden=true;});
@@ -113,6 +114,7 @@
     })):[];
     return [...personal,...inheritedSearch(q)].slice(0,30);
   };
+  window.addEventListener('rybalka-personal-data-changed',()=>{refresh().catch(e=>message(e.message,true));});
   try{await PersonalStore.ready();await refresh();}
   catch(e){message('Личные записи недоступны. Проверьте, разрешено ли браузеру сохранять данные для этой страницы.',true);host.querySelectorAll('button').forEach(b=>b.disabled=true);}
 })();
