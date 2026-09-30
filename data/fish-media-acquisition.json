@@ -202,54 +202,39 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "oncorhynchus-gorbuscha",
       "catalog_name": "Горбуша",
       "taxon": "Oncorhynchus gorbuscha",
-      "id": "oncorhynchus-gorbuscha",
-      "path": "assets/fish/oncorhynchus-gorbuscha.jpg",
+      "path": "assets/fish/oncorhynchus-gorbuscha-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_gorbuscha_(RFEIMG-0280).jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Oncorhynchus_gorbuscha_%28RFEIMG-0280%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "The U.S. Food and Drug Administration",
-        "author_html": "The U.S. Food and Drug Administration",
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-        "credit": "https://www.flickr.com/photos/39736050@N02/54452034446/",
-        "description": "The Regulatory Fish Encyclopedia (RFE) project (1993-2000) was a compilation of data in several formats to assist with the accurate identification of fish species. It was developed by FDA's RFE Team of scientists at the (former) Seafood Products Research Center, Seattle District, and the (former) Center for Food Safety and Applied Nutrition to help federal, state, and local officials and purchasers of seafood identify species substitution and economic deception in the marketplace. The RFE included high-resolution photographs for a number of commercially relevant fish species for sale in the U.S. market. The scanned digital images include whole fish as well as their marketed product forms such as fillets, steaks, etc. Images used in the RFE were photographed on a modified Polaroid MP4 camera system fitted with a Polaroid 545 holder for 4\" x 5\" film, and a 135 mm lens. Quickload tungsten-balanced ISO 64 E-6 process 4\" x 5\" transparency film was used to capture the images. A 10 cm scale bar was included in each photograph to indicate specimen size and magnification, and a standard Kodak color bar was included to assure color accuracy. Developed transparencies were professionally scanned to produce the digitized graphic images provided here.",
-        "categories": [
-          "Center for Food Safety and Applied Nutrition",
-          "PD US FDA",
-          "Images from the United States Food and Drug Administration",
-          "Flickr images reviewed by FlickreviewR 2",
-          "Seafood products"
-        ],
-        "file_title": "File:Oncorhynchus gorbuscha (RFEIMG-0280).jpg",
-        "web_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Oncorhynchus_gorbuscha_%28RFEIMG-0280%29.jpg/1280px-Oncorhynchus_gorbuscha_%28RFEIMG-0280%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "The U.S. Food and Drug Administration",
+        "reference_license": "Public domain",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_gorbuscha_(RFEIMG-0280).jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Для приложения сохранена официальная уменьшенная копия Wikimedia; оригинал сохранён в архивной папке проекта. Визуальная проверка отдельно.",
-      "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": false,
-        "sha256": "28c2e5af9b3136508a83fb4e4de43fbcd0dd4766febfc6ec6f0e9ae715218e6d",
-        "bytes": 108281,
-        "width": 1280,
-        "height": 896,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:36:56.651715+00:00",
-        "derived_by": "Wikimedia thumbnail"
-      },
-      "sourceTaxon": "Oncorhynchus gorbuscha",
-      "method": "existing_exact_file",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Самец в форме исходного нерестового ориентира.",
       "original_archive": {
-        "path": "fish/media-originals/downloaded/oncorhynchus-gorbuscha.jpg",
-        "sha256": "bb03c527512c80eb914d161437f72836c69e916f0cbac07c25190ae3c3a447f2",
-        "bytes": 3006328,
-        "width": 9612,
-        "height": 6730,
-        "mime": "image/jpeg"
+        "path": "fish/media-originals/generated/oncorhynchus-gorbuscha-underwater-v1.png",
+        "sha256": "dde685e608eb025962f781e3b529d219fe02d4e2f4de326b704f9a865f98fafd",
+        "bytes": 2514225
+      },
+      "check": {
+        "sha256": "dde685e608eb025962f781e3b529d219fe02d4e2f4de326b704f9a865f98fafd",
+        "bytes": 2514225,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-42ef346b-4b9c-4423-8fe9-756cafcf1ea7",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       }
     },
     {
@@ -639,46 +624,40 @@
       }
     },
     {
+      "id": "oncorhynchus-keta",
       "catalog_name": "Кета",
       "taxon": "Oncorhynchus keta",
-      "id": "oncorhynchus-keta",
-      "path": "assets/fish/oncorhynchus-keta.jpg",
+      "path": "assets/fish/oncorhynchus-keta-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Salmon_chum_fish_oncorhynchus_keta.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Salmon_chum_fish_oncorhynchus_keta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Knepp Timothy, U.S. Fish and Wildlife Service",
-        "author_html": "Knepp Timothy, U.S. Fish and Wildlife Service",
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-        "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/salmon-chum-fish-oncorhynchus-keta.jpg",
-        "description": "Image title: Chum salmon ( Oncorhynchus keta ) Image from Public domain images website, http://www.public-domain-image.com/full-image/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/salmon-chum-fish-oncorhynchus-keta.jpg.html",
-        "categories": [
-          "Oncorhynchus keta",
-          "PD-author",
-          "Images uploaded by Fæ",
-          "Public-domain-image.com",
-          "Timothy Knepp",
-          "Oncorhynchus illustrations"
-        ],
-        "file_title": "File:Salmon chum fish oncorhynchus keta.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Knepp Timothy, U.S. Fish and Wildlife Service",
+        "reference_license": "Public domain",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Salmon_chum_fish_oncorhynchus_keta.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска исходного нерестового ориентира.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/oncorhynchus-keta-underwater-v1.png",
+        "sha256": "751a0dfa14d3bf65206cbd745c62b952d42bf49251271808b2e081272273ae85",
+        "bytes": 2491753
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "3bf0a9da94284cb379986cf44e77eb99ef4ae290ae69916251ea46b3dd97a151",
-        "bytes": 252629,
-        "width": 2282,
-        "height": 1119,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:03.448506+00:00"
-      },
-      "sourceTaxon": "Oncorhynchus keta",
-      "method": "existing_exact_file"
+        "sha256": "751a0dfa14d3bf65206cbd745c62b952d42bf49251271808b2e081272273ae85",
+        "bytes": 2491753,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-b5bd8bfa-32da-4b54-bb75-ef5aaf8b6464",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Кефаль-лобан",
@@ -723,46 +702,40 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "oncorhynchus-kisutch",
       "catalog_name": "Кижуч",
       "taxon": "Oncorhynchus kisutch",
-      "id": "oncorhynchus-kisutch",
-      "path": "assets/fish/oncorhynchus-kisutch.jpg",
+      "path": "assets/fish/oncorhynchus-kisutch-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Salmon_coho_fish_oncorhynchus_kisutch.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Salmon_coho_fish_oncorhynchus_kisutch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Knepp Timothy, U.S. Fish and Wildlife Service",
-        "author_html": "Knepp Timothy, U.S. Fish and Wildlife Service",
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-        "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/salmon-coho-fish-oncorhynchus-kisutch.jpg",
-        "description": "Image title: Coho salmon ( Oncorhynchus kisutch ) Image from Public domain images website, http://www.public-domain-image.com/full-image/fauna-animals-public-domain-images-pictures/fishes-public-domain-images-pictures/salmon-fish-pictures/salmon-coho-fish-oncorhynchus-kisutch.jpg.html",
-        "categories": [
-          "Oncorhynchus kisutch",
-          "PD-author",
-          "Images uploaded by Fæ",
-          "Public-domain-image.com",
-          "Timothy Knepp",
-          "Oncorhynchus illustrations"
-        ],
-        "file_title": "File:Salmon coho fish oncorhynchus kisutch.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Knepp Timothy, U.S. Fish and Wildlife Service",
+        "reference_license": "Public domain",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Salmon_coho_fish_oncorhynchus_kisutch.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/oncorhynchus-kisutch-underwater-v1.png",
+        "sha256": "d6ecc409b5d0c41a6d0874bf79da6bc03363634388282d80e4d8ef3b274a7792",
+        "bytes": 2484938
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "5ec75aea3956e556f806a9223b70b160803e5fe21303699bbd26d9e9ddab9e3a",
-        "bytes": 275746,
-        "width": 2484,
-        "height": 1252,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:03.912644+00:00"
-      },
-      "sourceTaxon": "Oncorhynchus kisutch",
-      "method": "existing_exact_file"
+        "sha256": "d6ecc409b5d0c41a6d0874bf79da6bc03363634388282d80e4d8ef3b274a7792",
+        "bytes": 2484938,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-64431a3d-246c-4a5a-a49b-1b7161997253",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Килька европейская (шпрот)",
@@ -1103,47 +1076,40 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "oncorhynchus-nerka",
       "catalog_name": "Нерка (красная)",
       "taxon": "Oncorhynchus nerka",
-      "id": "oncorhynchus-nerka",
-      "path": "assets/fish/oncorhynchus-nerka.jpg",
+      "path": "assets/fish/oncorhynchus-nerka-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_nerka.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Oncorhynchus_nerka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Timothy Knepp of the Fish and Wildlife Service.",
-        "author_html": "Timothy Knepp of the Fish and Wildlife Service.",
-        "license": "Public domain",
-        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-        "credit": "US Fish and Wildlife Service",
-        "description": "Sockeye salmon ( Oncorhynchus nerka ) from the Northern Pacific Ocean.",
-        "categories": [
-          "Location not applicable",
-          "PD US FWS",
-          "Featured pictures from the United States Government",
-          "Featured pictures in the public domain",
-          "Timothy Knepp",
-          "Oncorhynchus nerka illustrations",
-          "Featured pictures of Actinopterygii"
-        ],
-        "file_title": "File:Oncorhynchus nerka.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Timothy Knepp of the Fish and Wildlife Service.",
+        "reference_license": "Public domain",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_nerka.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки. Окраска исходного нерестового ориентира.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/oncorhynchus-nerka-underwater-v1.png",
+        "sha256": "4338a1caa697939d331231a6fdeeedcbd88006fdc52341740cdc0073a3c7aa22",
+        "bytes": 2629002
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "414f41bf5c077a01ba9c108ddd52419ad86285c94fd4a5623ca6efe5f11dd9b0",
-        "bytes": 1246167,
-        "width": 2250,
-        "height": 1006,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:07.373714+00:00"
-      },
-      "sourceTaxon": "Oncorhynchus nerka",
-      "method": "existing_exact_file"
+        "sha256": "4338a1caa697939d331231a6fdeeedcbd88006fdc52341740cdc0073a3c7aa22",
+        "bytes": 2629002,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-b121c811-b5fe-455e-a744-e21652e7ca80",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Пиленгас",
@@ -1468,44 +1434,40 @@
       "replace_legacy": true
     },
     {
+      "id": "oncorhynchus-masou",
       "catalog_name": "Сима",
       "taxon": "Oncorhynchus masou",
-      "id": "oncorhynchus-masou",
-      "path": "assets/fish/oncorhynchus-masou.jpg",
+      "path": "assets/fish/oncorhynchus-masou-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_masou_masou,_Danyang.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Oncorhynchus_masou_masou%2C_Danyang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Gaeho77",
-        "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Gaeho77\" title=\"User:Gaeho77\">Gaeho77</a>",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "credit": "Own work",
-        "description": "Oncorhynchus masou masou(산천어), 단양 다누리아쿠아리움",
-        "categories": [
-          "Oncorhynchus masou masou",
-          "Self-published work",
-          "Files with coordinates missing SDC location of creation",
-          "Danuri Aquarium"
-        ],
-        "file_title": "File:Oncorhynchus masou masou, Danyang.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Gaeho77",
+        "reference_license": "CC BY-SA 4.0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_masou_masou,_Danyang.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/oncorhynchus-masou-underwater-v1.png",
+        "sha256": "4ed803644e2b7aaac1c15e9be6ca462a1c928fc69e5d881727bab46ba83b290f",
+        "bytes": 2471608
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "aa8ebd1c5a5623f035e314dce040dd502ac56c6dc0e117412e4aa99b6090ed85",
-        "bytes": 1041361,
-        "width": 3726,
-        "height": 2794,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:13.348483+00:00"
-      },
-      "sourceTaxon": "Oncorhynchus masou",
-      "method": "existing_exact_file"
+        "sha256": "4ed803644e2b7aaac1c15e9be6ca462a1c928fc69e5d881727bab46ba83b290f",
+        "bytes": 2471608,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-1a35efec-0cd2-40db-ad80-4c2c6a7f290b",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Стерлядь",
@@ -1590,43 +1552,40 @@
       "method": "existing_exact_file"
     },
     {
+      "id": "hucho-taimen",
       "catalog_name": "Таймень обыкновенный",
       "taxon": "Hucho taimen",
-      "id": "hucho-taimen",
-      "path": "assets/fish/hucho-taimen.jpg",
+      "path": "assets/fish/hucho-taimen-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://commons.wikimedia.org/wiki/File:Hucho_taimen.jpg",
-        "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Hucho_taimen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "タウナギ",
-        "author_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E3%82%BF%E3%82%A6%E3%83%8A%E3%82%AE&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:タウナギ (page does not exist)\">タウナギ</a>",
-        "license": "CC0",
-        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "credit": "Own work",
-        "description": "Hucho taimen in Lake Biwa museum, Japan",
-        "categories": [
-          "Hucho taimen",
-          "CC-Zero",
-          "Self-published work"
-        ],
-        "file_title": "File:Hucho taimen.jpg"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "タウナギ",
+        "reference_license": "CC0",
+        "reference_url": "https://commons.wikimedia.org/wiki/File:Hucho_taimen.jpg"
       },
-      "kind": "photo",
-      "review_note": "Лицензия и название вида проверены по метаданным Commons. Визуальная проверка отдельно; изображение не обработано.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/hucho-taimen-underwater-v1.png",
+        "sha256": "aec6311332ad1989657e3a7b6c99f7b524334c702c974451d06ad2879ca3e3c9",
+        "bytes": 2494692
+      },
       "check": {
-        "license": "verified_current_commons_metadata",
-        "taxon": "matched_metadata",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "59b9209d5e80af353cadd8181f02b9145fc12011a8047603fdbed2e8bf0d5e9d",
-        "bytes": 1557486,
-        "width": 4235,
-        "height": 2920,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T17:37:14.865010+00:00"
-      },
-      "sourceTaxon": "Hucho taimen",
-      "method": "existing_exact_file"
+        "sha256": "aec6311332ad1989657e3a7b6c99f7b524334c702c974451d06ad2879ca3e3c9",
+        "bytes": 2494692,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-26e626ee-5879-447d-98ac-4e72fc1e79ce",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Таймень сахалинский",
@@ -2189,38 +2148,40 @@
       "replace_legacy": true
     },
     {
+      "id": "salmo-trutta",
       "catalog_name": "Форель ручьевая (речная форма Salmo trutta)",
       "taxon": "Salmo trutta",
-      "id": "salmo-trutta",
-      "path": "assets/fish/salmo-trutta.jpg",
-      "kind": "photo",
+      "path": "assets/fish/salmo-trutta-underwater-v1.png",
+      "kind": "illustration",
       "status": "saved_needs_visual_review",
+      "replace_legacy": true,
       "source": {
-        "url": "https://www.inaturalist.org/observations/404078717",
-        "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/742004936/original.jpg",
-        "author": "Evan",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "photo_url": "https://www.inaturalist.org/photos/742004936",
-        "provider": "iNaturalist",
-        "description": "Salmo trutta — research-grade observation"
+        "origin": "generated_project_illustration",
+        "author": "ИИ-иллюстрация проекта",
+        "license": "Проектная иллюстрация, созданная ИИ",
+        "url": "",
+        "reference_author": "Evan",
+        "reference_license": "CC BY 4.0",
+        "reference_url": "https://www.inaturalist.org/observations/404078717"
       },
-      "sourceTaxon": "Salmo trutta",
-      "method": "exact_research_grade_observation",
-      "review_note": "Сохранена фотография авторского наблюдения iNaturalist, определённого до этого вида и отмеченного research grade. Автор и лицензия сохранены. Визуальная проверка отдельно. Прежняя картинка не используется в интерфейсе: это фрагмент карточки, общая таблица видов или неполное изображение. Оригинал сохранён для истории проекта.",
+      "method": "OpenAI built-in imagegen; project style and species references",
+      "review_note": "Проектная подводная иллюстрация; видовое соответствие требует проверки.",
+      "original_archive": {
+        "path": "fish/media-originals/generated/salmo-trutta-underwater-v1.png",
+        "sha256": "148108e6c473d06d99f8483ad75b5fae1e42c1eb165bccd6a2c89747c83a7c39",
+        "bytes": 2369733
+      },
       "check": {
-        "license": "verified_current_inaturalist_metadata",
-        "taxon": "exact_observation_taxon",
-        "visual": "needs_visual_review",
-        "original_bytes": true,
-        "sha256": "73579c839eb74fe329b5b362753a718598976d6f773cc380a4a7521fbd02e723",
-        "bytes": 2932922,
-        "width": 1536,
-        "height": 2048,
-        "mime": "image/jpeg",
-        "checked_at": "2026-09-30T18:11:24.615188+00:00"
-      },
-      "replace_legacy": true
+        "sha256": "148108e6c473d06d99f8483ad75b5fae1e42c1eb165bccd6a2c89747c83a7c39",
+        "bytes": 2369733,
+        "width": 1448,
+        "height": 1086,
+        "visual": "needs_species_review",
+        "taxon": "catalog_mapping_unverified_art",
+        "generation_id": "exec-17b98ecc-4850-468e-84a4-b1fc72a05b50",
+        "ui_loaded": true,
+        "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
+      }
     },
     {
       "catalog_name": "Хариус сибирский",
