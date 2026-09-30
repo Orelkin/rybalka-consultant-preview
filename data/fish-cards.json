@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "standard": "Fish Card Standard v1",
+  "cards": [{
+    "id":"sander-lucioperca",
+    "catalog_name":"Судак обыкновенный",
+    "scientific_name":"Sander lucioperca",
+    "reviewed_at":"2026-09-30",
+    "sections":[
+      {"id":"passport","title":"Паспорт вида","tab":"overview","claim_ids":["zander-taxonomy"]},
+      {"id":"recognition","title":"Как отличить","tab":"overview","claim_ids":["zander-recognition"]},
+      {"id":"habitat","title":"Где обитает","tab":"where","claim_ids":["zander-habitat"]},
+      {"id":"search","title":"Где искать и с чего начать","tab":"where","claim_ids":["zander-search"]},
+      {"id":"food","title":"Питание и кормовая база","tab":"overview","claim_ids":["zander-food"]},
+      {"id":"season","title":"Сезон и нерест","tab":"season","claim_ids":["zander-spawning"]},
+      {"id":"time","title":"Время суток и поведение","tab":"season","claim_ids":["zander-diel"]},
+      {"id":"methods","title":"Методы, приманки и оснастки","tab":"how","claim_ids":["zander-method"]},
+      {"id":"tactics","title":"Подача и тактика","tab":"how","claim_ids":["zander-presentation"]},
+      {"id":"experience","title":"Мой опыт","tab":"how","claim_ids":["zander-personal"]},
+      {"id":"mistakes","title":"Типичные ошибки","tab":"tips","claim_ids":["zander-mistakes"]},
+      {"id":"rules","title":"Регион и правила","tab":"tips","claim_ids":[],"empty_text":"Универсальное разрешение на вылов не задано. Для поездки нужны конкретный водоём, регион и дата; действующие ограничения проверяются отдельно."}
+    ]
+  }]
+}
