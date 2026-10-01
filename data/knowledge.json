@@ -135,6 +135,80 @@
       "read_scope": "project Stage 2 practical profile and accepted lure categories",
       "limits": "Практический слой приложения. Не научное доказательство превосходства конкретной приманки; методы проверяются по условиям и личному дневнику.",
       "grade": "C"
+    },
+    {
+      "id": "ec-perch-2026",
+      "title": "European Commission — Perca fluviatilis",
+      "url": "https://fish-commercial-names.ec.europa.eu/fish-names/species/perca-fluviatilis_en",
+      "kind": "official_review",
+      "read_scope": "Species description, taxonomic classification and habitat; morphological description cites FishBase.",
+      "limits": "Видовой справочник: название и признаки. Не источник правил российских водоёмов или прогноза клёва.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "fws-perch-erss",
+      "title": "USFWS — Eurasian Perch: Ecological Risk Screening Summary",
+      "url": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-European-Perch.pdf",
+      "kind": "official_review",
+      "read_scope": "Biology section: habitat, age-related feeding and egg ribbons; only relevant excerpts read, not the entire report.",
+      "limits": "Обзор цитирует FishBase и литературу. Численные пороги нереста из разных фрагментов не объединены; местные сроки и правила не установлены.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "nakayama-perch-2018",
+      "title": "Nakayama et al., 2018 — Fine-scale movement ecology of Eurasian perch",
+      "url": "https://doi.org/10.1111/eff.12393",
+      "kind": "primary_research",
+      "read_scope": "Publisher abstract only; 16 adult piscivorous perch, one year, Kleiner Döllnsee, Germany (25 ha). Full text not read.",
+      "limits": "Прочитана только аннотация. Одно озеро и взрослые рыбы. Движение не равно поклёвкам; корреляции не задают универсального температурного диапазона.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01",
+      "year": 2018,
+      "doi": "10.1111/eff.12393"
+    },
+    {
+      "id": "jacobsen-perch-2002",
+      "title": "Jacobsen et al., 2002 — Activity and food choice of piscivorous perch",
+      "url": "https://orbit.dtu.dk/en/publications/activity-and-food-choice-of-piscivorous-perch-perca-fluviatilis-i/",
+      "kind": "primary_research",
+      "read_scope": "Author abstract in DTU repository; large perch (27–37 cm), a shallow Danish lake, August 1997–July 1998. Full text not read.",
+      "limits": "Прочитана только аннотация. Одна популяция. Смена питания и суточные пики относятся к наблюдаемым рыбам; не календарь клёва для любого региона.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01",
+      "year": 2002
+    },
+    {
+      "id": "finland-perch-shoals-2022",
+      "title": "Fishing in Finland — Searching for perch shoals, 23.09.2022",
+      "url": "https://fishinginfinland.fi/searching-for-perch-shoals/",
+      "kind": "editorial_practice",
+      "read_scope": "Practical autumn note: feeding shoals, depth variation, fry/bird activity and jig/spinner methods.",
+      "limits": "Рыболовная практика на финских озёрах осенью, не сравнительный эксперимент. Указанные глубины и результативность не перенесены как универсальные.",
+      "grade": "C",
+      "reviewed_at": "2026-10-01",
+      "year": 2022
+    },
+    {
+      "id": "stage2-perch-practice",
+      "title": "Практический профиль окуня Stage 2 — порядок поиска и подачи",
+      "url": null,
+      "kind": "editorial_practice",
+      "read_scope": "FISH_PROFILES_V25: where, how, presentation and mistakes; editorial adaptation and observation checklist, 2026-10-01.",
+      "limits": "Рабочая тактика проекта. Не доказательство превосходства приманки; требует проверки по условиям и дневнику.",
+      "grade": "C",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "public-report-akhtubinsk-2021",
+      "title": "Личный отчёт — Ахтубинск, июль 2021",
+      "url": null,
+      "kind": "personal_report",
+      "read_scope": "Existing public reports.json: result, method and conclusion; exact day/time not provided.",
+      "limits": "Один личный выезд. Точный день, глубина, температура воды, число и размеры окуней не сохранены; общая закономерность не установлена.",
+      "grade": "PERSONAL",
+      "reviewed_at": "2026-10-01"
     }
   ],
   "claims": [
@@ -426,6 +500,177 @@
       "scope": "Редакционный вывод из исследований и границ личного опыта.",
       "status": "practice",
       "grade": "B"
+    },
+    {
+      "id": "perch-taxonomy",
+      "species_id": "perca-fluviatilis",
+      "text": "Окунь речной обыкновенный — Perca fluviatilis Linnaeus, 1758, семейство окуневых Percidae.",
+      "source_ids": [
+        "ec-perch-2026"
+      ],
+      "evidence": "official_review",
+      "scope": "Название и семейство вида; не морские окуни рода Sebastes.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-recognition",
+      "species_id": "perca-fluviatilis",
+      "text": "На боках выраженные тёмные поперечные полосы. Два спинных плавника разделены; в задней части первого заметно тёмное пятно. Брюшные и анальный плавники обычно жёлтые, оранжевые или красные. Определяйте по сочетанию признаков, а не только по окраске.",
+      "source_ids": [
+        "ec-perch-2026"
+      ],
+      "evidence": "official_review",
+      "scope": "Признаки речного окуня в европейском видовом справочнике. Рисунок в карточке сам по себе не подтверждает определение экземпляра.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-habitat",
+      "species_id": "perca-fluviatilis",
+      "text": "Окунь встречается в озёрах, водохранилищах, реках и солоноватых эстуарных лагунах. Личинки кормятся в открытой воде; многие молодые окуни в первое лето переходят к прибрежному донному корму. Одна глубина и тип берега не описывают все возрастные группы.",
+      "source_ids": [
+        "fws-perch-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Общее разнообразие местообитаний и возрастное использование участков; наличие вида и стоянки в конкретном водоёме проверяются отдельно.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-environment",
+      "species_id": "perca-fluviatilis",
+      "text": "В немецком озере 16 взрослых окуней за год наблюдений больше двигались при более высокой температуре воды и освещённости. Связь с давлением, ветром и фазой Луны была слабее. Это результат для одной популяции, без формулы расчёта поклёвок.",
+      "source_ids": [
+        "nakayama-perch-2018"
+      ],
+      "evidence": "primary_research",
+      "scope": "Крупные рыбоядные окуни, озеро Kleiner Döllnsee, Германия; прочитана аннотация. Измерено движение, не уловистость.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-observation-fields",
+      "species_id": "perca-fluviatilis",
+      "text": "При проверке горизонта отмечайте температуру именно воды, прозрачность, освещение, глубину и присутствие малька. Кислород учитывайте при наличии измерения; по температуре воздуха его не определяют. Универсальных порогов «хорошего клёва» в этой карточке нет.",
+      "source_ids": [
+        "stage2-perch-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Редакционный список наблюдений для сравнения выездов. Без фактических измерений значения остаются неизвестными.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-search",
+      "species_id": "perca-fluviatilis",
+      "text": "Начните с участков, где есть кормовая мелочь: край растительности, перепад глубины, ракушечник, граница струй. Проверяйте короткими сериями разные направления и горизонты. Бой малька и кормящиеся птицы могут подсказать стаю; отсутствие таких признаков не доказывает отсутствие окуня.",
+      "source_ids": [
+        "stage2-perch-practice",
+        "finland-perch-shoals-2022"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Рабочий порядок поиска; финский источник описывает осенние озёрные стаи. На реке рельеф и течение проверяются на месте.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-food",
+      "species_id": "perca-fluviatilis",
+      "text": "Личинки и мелкая молодь питаются преимущественно беспозвоночными; по мере роста многие окуни начинают поедать рыбу. Крупный окунь тоже использует доступный корм, поэтому поиск только по мальку может пропустить другие кормовые участки.",
+      "source_ids": [
+        "fws-perch-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Возрастные изменения питания из биологического обзора; универсальная граница размера для перехода на рыбу не задана.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-diet-variation",
+      "species_id": "perca-fluviatilis",
+      "text": "У крупных окуней в одном датском озере в исследуемом году рыба преобладала в рационе с августа по январь, а беспозвоночные — с февраля по июнь. Эти месяцы описывают конкретное наблюдение, а не выбор приманки по календарю для всей России.",
+      "source_ids": [
+        "jacobsen-perch-2002"
+      ],
+      "evidence": "primary_research",
+      "scope": "Окуни 27–37 см, мелководное озеро Дании, 1997–1998; прочитана аннотация. Рацион другой популяции может отличаться.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-spawning",
+      "species_id": "perca-fluviatilis",
+      "text": "В Северном полушарии нерест обычно весенний; икра образует длинные светлые ленты на погружённых растениях и других предметах. Местные сроки зависят от водоёма и прогрева. Фиксированную дату нереста и месячную шкалу клёва здесь не задаём.",
+      "source_ids": [
+        "fws-perch-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Общее описание нереста. Не действующий региональный запрет и не разрешение на ловлю во время нереста.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-diel",
+      "species_id": "perca-fluviatilis",
+      "text": "В двух озёрных исследованиях крупные окуни чаще двигались в светлое время; пики могли приходиться на рассвет, закат или середину дня. Наблюдения за движением помогают сравнивать сценарии, но не устанавливают точные часы поклёвок.",
+      "source_ids": [
+        "nakayama-perch-2018",
+        "jacobsen-perch-2002"
+      ],
+      "evidence": "primary_research",
+      "scope": "Отдельные взрослые озёрные популяции Германии и Дании; доступны аннотации. Мутность, кормовая база и сезон могут менять наблюдаемый ритм.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-methods",
+      "species_id": "perca-fluviatilis",
+      "text": "Для поиска попробуйте небольшой джиг, вращающуюся блесну или VIB/раттлин. Джиг позволяет проверить придонный горизонт, другие приманки — активную рыбу выше дна. Размер и массу подбирайте под глубину, течение и тест удилища; единственного лучшего монтажа нет.",
+      "source_ids": [
+        "stage2-perch-practice",
+        "finland-perch-shoals-2022"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Практические категории приманок. Финский материал подтверждает применение джигов и вращающихся блёсен осенью; VIB сохранён из профиля проекта.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-presentation",
+      "species_id": "perca-fluviatilis",
+      "text": "После серии поклёвок запомните направление заброса, дистанцию и горизонт. При затихании сначала проверьте соседнюю траекторию, глубину и темп подачи; затем меняйте приманку. Если контактов нет, переходите к следующему отличающемуся участку, не застревая на одном цвете.",
+      "source_ids": [
+        "stage2-perch-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Редакционная тактика поиска стаи и повторения подачи. Её эффективность проверяется по личным выездам.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-personal",
+      "species_id": "perca-fluviatilis",
+      "text": "В июле 2021 года в Ахтубинске окунь попадался почти на каждом забросе с лодки на мелководной струе с ракушечником; использовались небольшие тонущие шумные VIB/раттлины. Жерех держался дальше. Это личный результат одного выезда, без вывода об обязательном повторении.",
+      "source_ids": [
+        "public-report-akhtubinsk-2021"
+      ],
+      "evidence": "personal_report",
+      "scope": "Сохранённый публичный отчёт: месяц, место, метод и результат. Точный день, глубина, число окуней и условия воды неизвестны.",
+      "status": "personal",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "perch-mistakes",
+      "species_id": "perca-fluviatilis",
+      "text": "Не считайте мелкого окуня гарантией крупного и не продолжайте бесконечно менять цвет при неверном горизонте. Не переносите удачную глубину с одного озера на другой водоём. При сравнении выездов сохраняйте и нулевые результаты — они помогают проверить рабочую гипотезу.",
+      "source_ids": [
+        "stage2-perch-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Практические предостережения и порядок ведения наблюдений, без доказанного рейтинга факторов клёва.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
     }
   ]
 }

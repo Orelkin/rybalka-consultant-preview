@@ -1,0 +1,143 @@
+{
+  "species_id": "perca-fluviatilis",
+  "data": {
+    "species_id": "perca-fluviatilis",
+    "sections": 13,
+    "claims_added": 14,
+    "sources_added": 7,
+    "total_cards": 3,
+    "total_claims": 38,
+    "total_sources": 21,
+    "all_references_valid": true,
+    "prior_cards_and_claims_unchanged": true,
+    "all_63_image_hashes_unchanged": true,
+    "image_review_statuses_unchanged": true,
+    "public_constants_unchanged": true,
+    "knowledge_json_js_match": true,
+    "cache_digest": "6dd24ebc1e",
+    "independent_image_verification": false
+  },
+  "browser": {
+    "checked_at_utc": "2026-10-01T14:03:27.412Z",
+    "url": "http://127.0.0.1:4173/?v=perch-20261001",
+    "tabs": [
+      {
+        "label": "Обзор",
+        "claimIds": [
+          "perch-taxonomy",
+          "perch-recognition",
+          "perch-food",
+          "perch-diet-variation"
+        ],
+        "sections": [
+          "passport",
+          "recognition",
+          "food"
+        ],
+        "tab": "overview"
+      },
+      {
+        "label": "Где искать",
+        "claimIds": [
+          "perch-habitat",
+          "perch-environment",
+          "perch-observation-fields",
+          "perch-search"
+        ],
+        "sections": [
+          "habitat",
+          "environment",
+          "search"
+        ],
+        "tab": "where"
+      },
+      {
+        "label": "Как ловить",
+        "claimIds": [
+          "perch-methods",
+          "perch-presentation",
+          "perch-personal"
+        ],
+        "sections": [
+          "methods",
+          "tactics",
+          "experience"
+        ],
+        "tab": "how"
+      },
+      {
+        "label": "Сезоны",
+        "claimIds": [
+          "perch-spawning",
+          "perch-diel"
+        ],
+        "sections": [
+          "season",
+          "time"
+        ],
+        "tab": "season"
+      },
+      {
+        "label": "Советы",
+        "claimIds": [
+          "perch-mistakes"
+        ],
+        "sections": [
+          "mistakes",
+          "rules"
+        ],
+        "tab": "tips"
+      }
+    ],
+    "sourceEntries": [
+      {
+        "href": "https://fish-commercial-names.ec.europa.eu/fish-names/species/perca-fluviatilis_en",
+        "title": "European Commission — Perca fluviatilis"
+      },
+      {
+        "href": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-European-Perch.pdf",
+        "title": "USFWS — Eurasian Perch: Ecological Risk Screening Summary"
+      },
+      {
+        "href": "https://doi.org/10.1111/eff.12393",
+        "title": "Nakayama et al., 2018 — Fine-scale movement ecology of Eurasian perch"
+      },
+      {
+        "href": "https://orbit.dtu.dk/en/publications/activity-and-food-choice-of-piscivorous-perch-perca-fluviatilis-i/",
+        "title": "Jacobsen et al., 2002 — Activity and food choice of piscivorous perch"
+      },
+      {
+        "href": "https://fishinginfinland.fi/searching-for-perch-shoals/",
+        "title": "Fishing in Finland — Searching for perch shoals, 23.09.2022"
+      },
+      {
+        "href": null,
+        "title": "Практический профиль окуня Stage 2 — порядок поиска и подачи"
+      },
+      {
+        "href": null,
+        "title": "Личный отчёт — Ахтубинск, июль 2021"
+      }
+    ],
+    "abstract_only_reading_disclosed": true,
+    "mobile_viewport": {
+      "requested_width": 390,
+      "requested_height": 844,
+      "imageLoaded": true,
+      "overviewSections": 3,
+      "scrollWidth": 375,
+      "sourceLinks": 5,
+      "width": 375
+    },
+    "viewport_override_reset": true,
+    "observed_errors": [],
+    "real_phone_verified": false
+  },
+  "local_project_artifacts": [
+    "docs/recovery/perch-mobile-20261001.jpg",
+    "docs/recovery/perch-desktop-20261001.jpg",
+    "knowledge/extracts/perca-fluviatilis-20261001.md"
+  ],
+  "independent_image_verification": false,
+  "real_phone_verified": false
+}
