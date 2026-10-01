@@ -209,6 +209,71 @@
       "limits": "Один личный выезд. Точный день, глубина, температура воды, число и размеры окуней не сохранены; общая закономерность не установлена.",
       "grade": "PERSONAL",
       "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "ec-asp-2026",
+      "title": "European Commission — Leuciscus aspius",
+      "url": "https://fish-commercial-names.ec.europa.eu/fish-names/species/leuciscus-aspius_en",
+      "kind": "official_review",
+      "read_scope": "Scientific name, author, synonym Aspius aspius, habitat and morphological description; the page cites FishBase. Family ranks were not reconciled with modern Leuciscidae here.",
+      "limits": "Видовой справочник: название, синоним и признаки. Не источник местных правил или прогноза клёва.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "fws-asp-erss",
+      "title": "USFWS — Asp: Ecological Risk Screening Summary, 2020",
+      "url": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Asp.pdf",
+      "kind": "official_review",
+      "read_scope": "Relevant excerpts: taxonomy (p. 2), short description (pp. 3–4), Biology (pp. 4–5); not the full report. Habitat, fish diet, spawning substrate and lower-jaw projection. No numerical aquarium temperature used.",
+      "limits": "Обзор цитирует FishBase и CABI. Корм и сроки зависят от популяции; приведённые в обзоре месяцы и температурные значения не заданы как календарь клёва.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01",
+      "year": 2020
+    },
+    {
+      "id": "kargenberg-asp-2020",
+      "title": "Kärgenberg et al., 2020 — Migration patterns of asp in a river–lake system",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jfb.14454",
+      "kind": "primary_research",
+      "read_scope": "Publisher abstract only, lines 170–173: adult asp, acoustic telemetry for three years in the barrier-free Peipsi–Emajõgi–Võrtsjärv system, Estonia. Full text not read.",
+      "limits": "Прочитана только аннотация. Эстонская система рек и озёр без миграционных преград; результат не задаёт горизонт ловли или сроки для Волги и Ахтубы.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01",
+      "year": 2020,
+      "doi": "10.1111/jfb.14454"
+    },
+    {
+      "id": "horky-slavik-asp-2017",
+      "title": "Horký & Slavík, 2017 — Diel and seasonal rhythms of asp",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/03949370.2016.1230560",
+      "kind": "primary_research",
+      "read_scope": "Publisher abstract retrieved from search index; direct requests returned 403. Weekly telemetry over 12 months in the Czech Elbe. Online publication 2016; journal volume 29(5), 2017, pp. 449–459. Full text not read.",
+      "limits": "Прочитана только аннотация. Измеряли перемещения на чешском участке Эльбы, не поклёвки. Прямой доступ к странице издателя при проверке был ограничен.",
+      "grade": "A",
+      "reviewed_at": "2026-10-01",
+      "year": 2017,
+      "doi": "10.1080/03949370.2016.1230560"
+    },
+    {
+      "id": "stage2-asp-practice",
+      "title": "Практический профиль жереха Stage 2 — поиск, приманки и подача",
+      "url": null,
+      "kind": "editorial_practice",
+      "read_scope": "Saved FISH_PROFILES_V25 / fish/cards/legacy-profiles.json: where, how, presentation, mistakes. Editorial adaptation plus a conditions checklist. Not a scientific lure trial.",
+      "limits": "Рабочая тактика проекта, требующая проверки на воде. Не доказательство превосходства приманки, обязательной скорости проводки или одного горизонта.",
+      "grade": "C",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "public-reports-asp-2021-2024",
+      "title": "Личные отчёты — Ахтубинск, 07.2021; Красный Яр, 08.2024",
+      "url": null,
+      "kind": "personal_report",
+      "read_scope": "Two already-public reports.json entries: place, date, result, method, conclusion. No private coordinates imported. Krasny Yar retains a bottom-fishing scenario, but catch details are incomplete; the legacy profile's 3.5 kg was not adopted.",
+      "limits": "Два отдельных случая. Точный день, условия воды и размеры жереха не восстановлены; по Красному Яру детали улова неполные. В статистику успешных рыбалок этот сценарий пока не включён.",
+      "grade": "PERSONAL",
+      "reviewed_at": "2026-10-01"
     }
   ],
   "claims": [
@@ -669,6 +734,175 @@
       ],
       "evidence": "editorial_practice",
       "scope": "Практические предостережения и порядок ведения наблюдений, без доказанного рейтинга факторов клёва.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-taxonomy",
+      "species_id": "leuciscus-aspius",
+      "text": "Жерех — Leuciscus aspius (Linnaeus, 1758). В литературе также встречается название Aspius aspius — синоним этого вида.",
+      "source_ids": [
+        "ec-asp-2026"
+      ],
+      "evidence": "official_review",
+      "scope": "Название вида и синоним; семейственные ранги разных справочников здесь не пересматриваются.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-recognition",
+      "species_id": "leuciscus-aspius",
+      "text": "Тело вытянутое и сжатое с боков, голова заострённая, рот крупный. Верхняя челюсть заходит за передний край глаза; выступ нижней челюсти входит в выемку верхней. Между брюшными и анальным плавниками есть киль, покрытый чешуёй. Бока серебристые, спина темнее. Определяйте вид по сочетанию признаков.",
+      "source_ids": [
+        "ec-asp-2026",
+        "fws-asp-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Морфологические признаки из видовых обзоров. Иллюстрация карточки не заменяет определение пойманной рыбы.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-food",
+      "species_id": "leuciscus-aspius",
+      "text": "Жерех преимущественно питается рыбой; среди важной добычи в обзоре названы уклейка и корюшка. Ранняя молодь использует также беспозвоночных и личинок рыб. Состав кормовой базы зависит от водоёма и размера жереха.",
+      "source_ids": [
+        "fws-asp-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Обобщённое питание разных возрастов; наличие конкретного корма на выбранном участке нужно наблюдать отдельно.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-habitat",
+      "species_id": "leuciscus-aspius",
+      "text": "Жерех встречается в открытой воде крупных и средних равнинных рек и больших озёр, в нижних течениях и эстуариях. В обзоре отмечены участки у притоков и мостовых опор, глубокие струи и спокойные заливы на поворотах реки. Вид не ограничен поверхностным горизонтом.",
+      "source_ids": [
+        "fws-asp-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Обзор местообитаний, без фиксированной глубины стоянки и гарантии присутствия на каждой похожей точке.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-migration",
+      "species_id": "leuciscus-aspius",
+      "text": "В трёхлетнем исследовании системы Чудское озеро — Эмайыги — Выртсъярв взрослые жерехи использовали реки, притоки и озёра в разные сезоны. Для этой популяции места кормления, зимовки и нереста различались; связанность участков оказалась важна для миграций.",
+      "source_ids": [
+        "kargenberg-asp-2020"
+      ],
+      "evidence": "primary_research",
+      "scope": "Аннотация исследования в Эстонии, система без миграционных барьеров. Это основание учитывать связь участков, а не переносить её сезонную схему на любой бассейн.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-observation-fields",
+      "species_id": "leuciscus-aspius",
+      "text": "При выборе точки запишите течение и его границы, уровень и прозрачность воды, наличие малька, горизонт проводки, температуру воды при измерении и время суток. Значение температуры воздуха не заменяет температуру воды. Если кислород и изменения уровня неизвестны, оставьте их неизвестными; общей шкалы «идеальных условий» здесь нет.",
+      "source_ids": [
+        "stage2-asp-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Редакционный порядок наблюдений для сравнения выездов; не исследование порогов температуры, кислорода или давления.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-search",
+      "species_id": "leuciscus-aspius",
+      "text": "Начните со связки «струя + корм + перепад или граница потока»: впадение притока, край переката, обратное течение, бровка рядом со струёй. Бой и птицы над мальком помогают выбрать район поиска, но не доказывают наличие жереха. Если всплесков нет, проверьте доступные горизонты и соседнюю глубину.",
+      "source_ids": [
+        "stage2-asp-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Рабочая схема поиска на реке. Птицы и поверхностная активность — наблюдаемые подсказки, требующие проверки.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-spawning",
+      "species_id": "leuciscus-aspius",
+      "text": "Для нереста жерех использует участки с течением; икра прикрепляется к гравию или затопленной растительности. Озёрные популяции могут заходить в притоки. Сроки определяются бассейном и условиями года; единого календаря клёва и разрешённых дат ловли для всех регионов нет.",
+      "source_ids": [
+        "fws-asp-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Общие нерестовые особенности из обзора. Не разрешение на ловлю; местные сроки и ограничения проверяются по водоёму и дате.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-diel",
+      "species_id": "leuciscus-aspius",
+      "text": "На чешском участке Эльбы за год телеметрии суточные перемещения жереха менялись по сезонам. Летом и осенью наблюдались дневные и/или сумеречные пики движения, весной и зимой перемещения были слабее. Это не означает универсальный час клёва: изучали движение рыб, а не поклёвки.",
+      "source_ids": [
+        "horky-slavik-asp-2017"
+      ],
+      "evidence": "primary_research",
+      "scope": "Прочитана аннотация издателя. Один речной участок и 12 месяцев наблюдений; вывод нельзя автоматически переносить на иной водоём или конкретную дату.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-methods",
+      "species_id": "leuciscus-aspius",
+      "text": "Для проверки верхнего и среднего горизонта можно начать с компактной дальнобойной колеблющейся блесны или воблера под течение; тонущий VIB позволяет проверить глубину. Выбирайте массу по дальности, потоку и допустимому тесту удилища. Живой малёк у дна остаётся отдельным сценарием, применимым только после проверки местных правил.",
+      "source_ids": [
+        "stage2-asp-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Практический набор вариантов; сравнение приманок и универсальные размеры или масса экспериментально не установлены.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-presentation",
+      "species_id": "leuciscus-aspius",
+      "text": "При видимом бое сначала определите дистанцию и направление струи. Подайте приманку в рабочую зону и сравните углы заброса, скорость и горизонт; меняйте по одному параметру. Если рыба держится далеко, проверьте достаточность заброса. При отсутствии контакта сравните соседний участок и более глубокую подачу, сохраняя результат в дневнике.",
+      "source_ids": [
+        "stage2-asp-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Редакционная тактика сравнения подач; не доказательство обязательной быстрой проводки или эффективности конкретного цвета.",
+      "status": "practice",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-personal-akhtubinsk",
+      "species_id": "leuciscus-aspius",
+      "text": "Ахтубинск, июль 2021: ловля с лодки на мелководной струе с ракушечником, небольшими тонущими шумными VIB/раттлинами. В отчёте указаны окунь и жерех; жерех держался дальше и требовал дальнего заброса. Для следующего похожего выезда это гипотеза о дистанции и участке, а не правило для всех условий.",
+      "source_ids": [
+        "public-reports-asp-2021-2024"
+      ],
+      "evidence": "personal_report",
+      "scope": "Сохранённый личный случай. Точный день, глубина, число и размер жерехов, температура и уровень воды не указаны.",
+      "status": "personal",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-personal-krasny-yar",
+      "species_id": "leuciscus-aspius",
+      "text": "Красный Яр, август 2024: сохранён отдельный донный сценарий на живого малька, на глубине более 10 м. Детали улова восстановлены частично, поэтому результативность, вес рыбы и точная оснастка здесь не утверждаются. Сценарий показывает направление для проверки другого горизонта; сравнивать его с поверхностной ловлей по статистике пока нельзя.",
+      "source_ids": [
+        "public-reports-asp-2021-2024"
+      ],
+      "evidence": "personal_report",
+      "scope": "Частичный отчёт. Не подтверждённая серия уловов и не доказательство преимущества донной ловли.",
+      "status": "personal",
+      "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "asp-mistakes",
+      "species_id": "leuciscus-aspius",
+      "text": "Не сводите жереха только к поверхностному бою и не гоняйтесь за одиночным всплеском без проверки струи и корма. На прозрачной воде соблюдайте дистанцию как рабочую меру осторожности. Не объясняйте отсутствие поклёвок цветом приманки, пока не проверены дальность и горизонт; сохраняйте также нулевые выезды.",
+      "source_ids": [
+        "stage2-asp-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Практические предостережения. Осторожность и причины отсутствия контакта проверяются наблюдениями, а не объявляются законом вида.",
       "status": "practice",
       "reviewed_at": "2026-10-01"
     }

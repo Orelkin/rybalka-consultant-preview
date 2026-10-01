@@ -329,6 +329,119 @@
           "empty_text": "Для поездки укажите водоём, регион и дату. Действующие сроки запрета, разрешённые способы и нормы вылова проверяются отдельно; универсальное разрешение на вылов не задано."
         }
       ]
+    },
+    {
+      "id": "leuciscus-aspius",
+      "catalog_name": "Жерех",
+      "scientific_name": "Leuciscus aspius",
+      "reviewed_at": "2026-10-01",
+      "sections": [
+        {
+          "id": "passport",
+          "title": "Паспорт вида",
+          "tab": "overview",
+          "claim_ids": [
+            "asp-taxonomy"
+          ]
+        },
+        {
+          "id": "recognition",
+          "title": "Как отличить",
+          "tab": "overview",
+          "claim_ids": [
+            "asp-recognition"
+          ]
+        },
+        {
+          "id": "habitat",
+          "title": "Где обитает",
+          "tab": "where",
+          "claim_ids": [
+            "asp-habitat"
+          ]
+        },
+        {
+          "id": "environment",
+          "title": "Течение, уровень и условия",
+          "tab": "where",
+          "claim_ids": [
+            "asp-migration",
+            "asp-observation-fields"
+          ]
+        },
+        {
+          "id": "search",
+          "title": "Где искать и с чего начать",
+          "tab": "where",
+          "claim_ids": [
+            "asp-search"
+          ]
+        },
+        {
+          "id": "food",
+          "title": "Питание и кормовая база",
+          "tab": "overview",
+          "claim_ids": [
+            "asp-food"
+          ]
+        },
+        {
+          "id": "season",
+          "title": "Сезон и нерест",
+          "tab": "season",
+          "claim_ids": [
+            "asp-spawning"
+          ]
+        },
+        {
+          "id": "time",
+          "title": "Время суток и поведение",
+          "tab": "season",
+          "claim_ids": [
+            "asp-diel"
+          ]
+        },
+        {
+          "id": "methods",
+          "title": "Методы, приманки и оснастки",
+          "tab": "how",
+          "claim_ids": [
+            "asp-methods"
+          ]
+        },
+        {
+          "id": "tactics",
+          "title": "Подача и тактика",
+          "tab": "how",
+          "claim_ids": [
+            "asp-presentation"
+          ]
+        },
+        {
+          "id": "experience",
+          "title": "Мой опыт",
+          "tab": "how",
+          "claim_ids": [
+            "asp-personal-akhtubinsk",
+            "asp-personal-krasny-yar"
+          ]
+        },
+        {
+          "id": "mistakes",
+          "title": "Типичные ошибки",
+          "tab": "tips",
+          "claim_ids": [
+            "asp-mistakes"
+          ]
+        },
+        {
+          "id": "rules",
+          "title": "Регион и правила",
+          "tab": "tips",
+          "claim_ids": [],
+          "empty_text": "Для поездки укажите водоём, регион и дату. Сроки запрета, разрешённые способы и нормы вылова проверяются отдельно; универсальное разрешение на ловлю жереха не задано."
+        }
+      ]
     }
   ]
 }
