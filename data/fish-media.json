@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "images": [
     {
       "id": "neogobius-fluviatilis",
@@ -2599,7 +2599,7 @@
       "taxon": "Esox lucius",
       "path": "assets/fish/esox-lucius.webp",
       "kind": "illustration",
-      "status": "saved_needs_visual_review",
+      "status": "verified_species_visual",
       "source": {
         "url": "",
         "author": "",
@@ -2607,9 +2607,18 @@
         "license_url": "",
         "origin": "recovered_project_illustration"
       },
-      "review_note": "Сохранена прежняя проектная иллюстрация. Видовые признаки требуют отдельной проверки.",
+      "review_note": "Видовая морфология проверена 01.10.2026 по официальным/справочным референсам Esox lucius: удлинённое тело, длинная плоская морда, крупная пасть, заднее положение спинного и анального плавников и светлые пятна на более тёмном фоне соответствуют виду.",
       "sha256": "5d6ccca701102d819f2eff5e938088c8b68b8321a00f2ed80f104370df8bbd6b",
-      "bytes": 83402
+      "bytes": 83402,
+      "visual_verification": {
+        "checked_at": "2026-10-01",
+        "status": "VERIFIED",
+        "reference_urls": [
+          "https://www.fws.gov/media/northern-pike-20",
+          "https://fish-commercial-names.ec.europa.eu/fish-names/species/esox-lucius_en"
+        ],
+        "limits": "Проверка подтверждает пригодность иллюстрации для карточки вида; это не фотографический эталон и не определитель редких близких видов."
+      }
     },
     {
       "id": "leuciscus-idus",
