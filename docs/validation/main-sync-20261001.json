@@ -1,0 +1,182 @@
+{
+  "checked_at_utc": "2026-10-01T12:14:47.695667+00:00",
+  "code_and_data_main": "85b0451777592dc97d7c35144e80f968f9a42fff",
+  "published_files": {
+    "checked_at_utc": "2026-10-01T12:03:49.766044+00:00",
+    "public_url": "https://orelkin.github.io/rybalka-consultant-preview/",
+    "main_commit": "85b0451777592dc97d7c35144e80f968f9a42fff",
+    "comparison": "HTTP bytes against Git blobs, without working-tree line-ending conversion",
+    "files": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 3609,
+        "sha256": "c863c612ac34bd240b4fdf788ca468dedad1d254b1fb3535ded4cbb3f3ccf320",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "data/fish-cards.json",
+        "status": 200,
+        "bytes": 5950,
+        "sha256": "b71afc918a3e2b1ecde5625aa1b78ed3213be04faec5bd51ede15593c43d55d8",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "data/knowledge.json",
+        "status": 200,
+        "bytes": 27893,
+        "sha256": "f8e986d5a9560c3a51243e2de77d009ae78a8ca7d76ed6bda7cb605e6a1c4b62",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "data/fish-knowledge.js",
+        "status": 200,
+        "bytes": 28260,
+        "sha256": "f086cc2f74334445d201793652a1b612361bbf4c5419ac547f1c59441f2258de",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "data/fish-media.json",
+        "status": 200,
+        "bytes": 133339,
+        "sha256": "0fd6f8399ad18e6fa0d11c123ecbb8f219e5e11774ae1c0922d7dcd198db992a",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "data/fish-media.js",
+        "status": 200,
+        "bytes": 109064,
+        "sha256": "55271df9385a7610e08b3aaf62c4733d91f6ed3d6efe8f869c26a78dfffe0a33",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "assets/fish/esox-lucius.webp",
+        "status": 200,
+        "bytes": 83402,
+        "sha256": "5d6ccca701102d819f2eff5e938088c8b68b8321a00f2ed80f104370df8bbd6b",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk00.js",
+        "status": 200,
+        "bytes": 573152,
+        "sha256": "ccf2998bfd033972d1456cdecc375c99fa46b5cdcee1b9a124e351130094131c",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk01.js",
+        "status": 200,
+        "bytes": 570985,
+        "sha256": "74e9a65f06e39dbf9edfb25a1b01582982f3d69fdaad428e8df9030864082d32",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk02.js",
+        "status": 200,
+        "bytes": 572748,
+        "sha256": "2de68b7bb26f5a6d4017177faedc54f714f07536f0bde0e03242913705a6680b",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk03.js",
+        "status": 200,
+        "bytes": 573843,
+        "sha256": "65eed082600738ac0b62974c12655a7e6d06dd7a419d30365b1f6c7be55551d9",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk04.js",
+        "status": 200,
+        "bytes": 570967,
+        "sha256": "bee0e70450a925a4fd83fe7f75e2a1684f1cf3945b7d53af80b9a1ec2efdca99",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk05.js",
+        "status": 200,
+        "bytes": 583482,
+        "sha256": "d4375a1afa937b10143e66e2d3dd28286e2a8baa2d12856f179cc6ae8d2c18ab",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk06.js",
+        "status": 200,
+        "bytes": 593170,
+        "sha256": "b7b7972ef07a76bdc17a5fc0cbd87e44465c9e7df09b1ba41e697567ca811530",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk07.js",
+        "status": 200,
+        "bytes": 609568,
+        "sha256": "fd839133295cabb93595a7fb03d8dae1816f770e913f47671e70d65e9ad12e05",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk08.js",
+        "status": 200,
+        "bytes": 626960,
+        "sha256": "875f806524ed73720819ff6dae5862d50df733b6ec63e848736899a2df2a6087",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk09.js",
+        "status": 200,
+        "bytes": 578606,
+        "sha256": "1e8e2e5fe646dcbac6e9625f360c3b0528c399f909419c10566931a403dbc4a4",
+        "matches_main_git_blob": true
+      },
+      {
+        "path": "bundle/chunk10.js",
+        "status": 200,
+        "bytes": 578754,
+        "sha256": "03f1a98285d1b17fbabc351c98851f580c1c0463364f1292bc701f6ac8048933",
+        "matches_main_git_blob": true
+      }
+    ],
+    "all_match": true,
+    "deployment": {
+      "workflow_run": "https://github.com/Orelkin/rybalka-consultant-preview/actions/runs/36854086439",
+      "head_sha": "85b0451777592dc97d7c35144e80f968f9a42fff",
+      "conclusion": "success"
+    },
+    "phone_verified": false
+  },
+  "desktop_render": {
+    "checked_at_utc": "2026-10-01T12:07:01.021Z",
+    "public_url": "https://orelkin.github.io/rybalka-consultant-preview/?v=85b0451",
+    "main_commit": "85b0451777592dc97d7c35144e80f968f9a42fff",
+    "desktop_render_verified": true,
+    "catalog_count": 63,
+    "group_counts": [
+      10,
+      11,
+      5,
+      16,
+      14,
+      7
+    ],
+    "pike_card_source_disclosure_verified": true,
+    "pike_image_loaded": true,
+    "observed_errors": [],
+    "phone_verified": false,
+    "screenshot": "docs/recovery/main-pike-desktop-20261001.jpg"
+  },
+  "local_rebuild": {
+    "upstream_main": "85b0451777592dc97d7c35144e80f968f9a42fff",
+    "rebuild_git_worktree_unchanged": true,
+    "pike_visual_metadata_preserved": true,
+    "different_image_verification_reset": true,
+    "canonical_public_constants_unchanged": true,
+    "reconstructed_source_sha256": "9dd00342f9d991aae97e8ace20de6aabcfe08c26ac4a0abb14fbfb6678b98aab"
+  },
+  "local_preservation": {
+    "navigation_branch": "local/navigation-review-20261001",
+    "navigation_commit": "604c2faf646ba99d0afaed37c6e0f6bb6230e3c1"
+  },
+  "p0_remaining": [
+    "Actual phone check at the same GitHub Pages URL",
+    "Old phone shortcut channel check"
+  ],
+  "source_of_pike_visual_review": "Adopted existing main metadata; no new biological verification in this session"
+}
