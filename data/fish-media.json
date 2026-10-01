@@ -33,7 +33,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "neogobius-fluviatilis",
+        "path": "assets/fish/neogobius-fluviatilis-underwater-v1-display-60a5047c1464-thumb.webp",
+        "original_sha256": "60a5047c1464fe7030ea1a1cc2eb9048fbad6bd944edb7f01c71af0e3a086d08",
+        "sha256": "736b1e4592f79faaba7951634a395dddc7825b534c76fbdf936ebbd64a746020",
+        "bytes": 1779174,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "9f3b3a73e5264a2aeb5691e3cc0770641d5798ff173f45ccf1285332b32ead5c"
+      }
     },
     {
       "id": "misgurnus-anguillicaudatus",
@@ -66,7 +80,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "misgurnus-anguillicaudatus",
+        "path": "assets/fish/misgurnus-anguillicaudatus-underwater-v1-display-62eac32dcf0e-thumb.webp",
+        "original_sha256": "62eac32dcf0e3c09d10c430552761d4271f3a217edc502405c75a5997f478e70",
+        "sha256": "0431474dcde2e6a297a039cfa09ee22f0ccac3ffbd614476eb1243c34921247a",
+        "bytes": 1624696,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "f665e1adcfd9fd8050efb2a229a52eee84ad346df4364825e167465acdf3eabc"
+      }
     },
     {
       "id": "misgurnus-fossilis",
@@ -99,7 +127,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "misgurnus-fossilis",
+        "path": "assets/fish/misgurnus-fossilis-underwater-v1-display-f81cc11daffc-thumb.webp",
+        "original_sha256": "f81cc11daffc2d0035222504112d57713c4dd12282f8ef3e3e87058e77d644e0",
+        "sha256": "535809131bdcb4afe78d83197f6547a3963f2bc837599d37c1c2b211378e4cc7",
+        "bytes": 1611140,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "0d2ff78dc04b7fdc65d4721aa1e46d2abbe68fc3609d51f8e94baf6169bf050b"
+      }
     },
     {
       "id": "squalius-cephalus",
@@ -150,7 +192,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "barbatula-toni",
+        "path": "assets/fish/barbatula-toni-underwater-v1-display-bd8abe468a39-thumb.webp",
+        "original_sha256": "bd8abe468a39ab27f2ee45c5a094efbe615baf7eae1e68f834146015d13bd337",
+        "sha256": "7c0d3a33be9876ee6197d52d76935a166c3d33228763fc4bb4dd9e0e951f4a33",
+        "bytes": 1698408,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "7484fbef76a957b08385dc52aeff330da72aabc9729297a6759e5884b8766073"
+      }
     },
     {
       "id": "salvelinus-alpinus",
@@ -183,7 +239,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "salvelinus-alpinus",
+        "path": "assets/fish/salvelinus-alpinus-underwater-v1-display-14fb006e689c-thumb.webp",
+        "original_sha256": "14fb006e689cf4cc544ac5c7591d684b84755d1890c6fe457479288d4f60a51a",
+        "sha256": "3fa290fa6e2d238587f6382c50859eaad8587371552f7c45bfdaf87943d03e4f",
+        "bytes": 1959662,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "45d275d4af80d45b59be2ed005d8954ab3a3f65020974a41411a7a32f53a4c62"
+      }
     },
     {
       "id": "oncorhynchus-gorbuscha",
@@ -216,7 +286,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-gorbuscha",
+        "path": "assets/fish/oncorhynchus-gorbuscha-underwater-v1-display-dde685e608eb-thumb.webp",
+        "original_sha256": "dde685e608eb025962f781e3b529d219fe02d4e2f4de326b704f9a865f98fafd",
+        "sha256": "401771728a518129cc5be160be2684b7be4c0ca49444d34ed509180221431de3",
+        "bytes": 1882732,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "c375f7d9624f43ab2e1ebb7bf8261296d791f6e5becc25fda3e43f3c7d57abba"
+      }
     },
     {
       "id": "blicca-bjoerkna",
@@ -469,7 +553,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "platichthys-stellatus",
+        "path": "assets/fish/platichthys-stellatus-underwater-v1-display-c328b2f01e92-thumb.webp",
+        "original_sha256": "c328b2f01e924bd9e2c7832569e28cd67fe09f08b79a08cb176e438fc0ee637e",
+        "sha256": "f9b5ecd2a3bfcf13cf1c1e45c15aa7f8dc866c15c24438d1bf7ebe7baf578ff2",
+        "bytes": 2196816,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "4285822e5bfd7c15b6ed2c8b33833abdb06d0f38ab10a2176eda6d072d40e6a3"
+      }
     },
     {
       "id": "liopsetta-glacialis",
@@ -502,7 +600,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "liopsetta-glacialis",
+        "path": "assets/fish/liopsetta-glacialis-underwater-v1-display-903647a798d4-thumb.webp",
+        "original_sha256": "903647a798d4d97cb3f469696b7740da7f50ff472f24f57fdd1518701ff00341",
+        "sha256": "ddeafe6ca2386186d689c75d08fc32c99606d3fb0295276cb522d53a6a2c4ab0",
+        "bytes": 2022556,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "97d3612cd3b9f95e7621a925f92f0a16060595c5ee05ed7d367f99a329b03ff1"
+      }
     },
     {
       "id": "platichthys-flesus",
@@ -535,7 +647,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "platichthys-flesus",
+        "path": "assets/fish/platichthys-flesus-underwater-v1-display-d5f30cc8bd9b-thumb.webp",
+        "original_sha256": "d5f30cc8bd9b2077949c808db2ba0a14ee72b787df47cee37dfcb18c04539cc1",
+        "sha256": "86ad69f5cddc1ef1c48932c564fbbecd1ff7df844acbe8c3a256f63fadf50671",
+        "bytes": 1948980,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "8c42a9fe2ec0a94a98a58f1e532011d31919fc2a61750a817064281376b476e4"
+      }
     },
     {
       "id": "carassius-carassius",
@@ -686,7 +812,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-keta",
+        "path": "assets/fish/oncorhynchus-keta-underwater-v1-display-751a0dfa14d3-thumb.webp",
+        "original_sha256": "751a0dfa14d3bf65206cbd745c62b952d42bf49251271808b2e081272273ae85",
+        "sha256": "6371db8bdfcbe1ef97616ca73e669c334a52a4723e31d88e307f56482cdf46ea",
+        "bytes": 1929476,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "aed0dd90c32d52925632e02bedb871910a08b4b819c180a0c1ac4b5c53cdf38d"
+      }
     },
     {
       "id": "mugil-cephalus",
@@ -719,7 +859,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "mugil-cephalus",
+        "path": "assets/fish/mugil-cephalus-underwater-v1-display-6864b82cfa5b-thumb.webp",
+        "original_sha256": "6864b82cfa5bd0ab4e024ffb6da7899b0531955e859af644b7041f3b3669ae01",
+        "sha256": "5b27c32c76e3cf74036c5ad08e02270bc8728cedb65151e3fb3dea8d929ed433",
+        "bytes": 1554254,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "c728579efeeb40a70159a131973f4aea3636c7ad21cc6d61f0494bd79897ceb2"
+      }
     },
     {
       "id": "oncorhynchus-kisutch",
@@ -752,7 +906,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-kisutch",
+        "path": "assets/fish/oncorhynchus-kisutch-underwater-v1-display-d6ecc409b5d0-thumb.webp",
+        "original_sha256": "d6ecc409b5d0c41a6d0874bf79da6bc03363634388282d80e4d8ef3b274a7792",
+        "sha256": "3e13a911fcf90f75ac769526748d9381bf4a1bdda976018a95f3e12e292570b3",
+        "bytes": 1856944,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "2489f495a0c1510d6af66e78dbbf6469fccc587237ad91f76a3b953cc2a8e8ba"
+      }
     },
     {
       "id": "sprattus-sprattus",
@@ -785,7 +953,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "sprattus-sprattus",
+        "path": "assets/fish/sprattus-sprattus-underwater-v1-display-8dc9f8e34aff-thumb.webp",
+        "original_sha256": "8dc9f8e34affdeef358b45ea8fd6f4a497f0917a94cf175168e20847befb6c58",
+        "sha256": "e094a0c9bc20a8f61f6a8d63a646424ff766dfb750f9fed3e941ba7beffbc9e7",
+        "bytes": 1718828,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "7171a028cda8d77324eedeaea1a161429d0cbf7b4b1641f95ea13666a50ef1cb"
+      }
     },
     {
       "id": "osmerus-eperlanus",
@@ -818,7 +1000,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "osmerus-eperlanus",
+        "path": "assets/fish/osmerus-eperlanus-underwater-v1-display-9b237fefed78-thumb.webp",
+        "original_sha256": "9b237fefed78fc4c048bc7d49678c7bc320498f420732e30d08c64329aa17d91",
+        "sha256": "51e4b4ed9b292145640c06edc216df8b6c76159ffeb5b0c5d69ba1c6deea88ee",
+        "bytes": 1738258,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "424d05b0564a1100ceb90826d5ff07f70d40bb9a66635870af038649e8502e99"
+      }
     },
     {
       "id": "scardinius-erythrophthalmus",
@@ -898,7 +1094,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "salvelinus-leucomaenis",
+        "path": "assets/fish/salvelinus-leucomaenis-underwater-v1-display-e291f3639c29-thumb.webp",
+        "original_sha256": "e291f3639c29d9ee10f4b8eb0c92e73e8351806d8970b1ceaeb62b506d96b1f3",
+        "sha256": "b5ad06930b0ebe0971d9be6896043236c96becde54077bfe7227c065269e2ea4",
+        "bytes": 1820090,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "46f9b0eb1177180fabf5b29959f5a22d90380a0f4addc1bde63a0619bcb7ffad"
+      }
     },
     {
       "id": "abramis-brama",
@@ -1033,7 +1243,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "lampetra-fluviatilis",
+        "path": "assets/fish/lampetra-fluviatilis-underwater-v1-display-5ebbf47f7a94-thumb.webp",
+        "original_sha256": "5ebbf47f7a94d51fb3af625cd7ea0470d17ddd08122e165a3de2f82a85a3229a",
+        "sha256": "27d17bad1290c5d3caa29935e95bdf032ac483479e63254ef2b78547cd4fb17a",
+        "bytes": 1575360,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "658b3d8e060e88831f2d66c6112f841689759b8da7ca66e5b72781dc989f3877"
+      }
     },
     {
       "id": "mallotus-villosus",
@@ -1066,7 +1290,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "mallotus-villosus",
+        "path": "assets/fish/mallotus-villosus-underwater-v1-display-3b51516001bf-thumb.webp",
+        "original_sha256": "3b51516001bf57f33382baae8882d69abe9a986c531ed3f1f71186148893f2d9",
+        "sha256": "d75f3a5b57c9066c2ed90abf7b68f06fe8cab2a6bf26cc8829622bf8bb801e68",
+        "bytes": 1729252,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "0fd0ed79b92caee9fd5c4c82b741048c97cc410454d8801c9ca9b0c0eaebbb8e"
+      }
     },
     {
       "id": "lota-lota",
@@ -1154,7 +1392,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-nerka",
+        "path": "assets/fish/oncorhynchus-nerka-underwater-v1-display-4338a1caa697-thumb.webp",
+        "original_sha256": "4338a1caa697939d331231a6fdeeedcbd88006fdc52341740cdc0073a3c7aa22",
+        "sha256": "1084c75d7cef2e181da5b39ea1ae5feed93347f604ffea4fff971fe65b60db22",
+        "bytes": 2008746,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "2cba80ab1ac6cefeb2aa54b37b636b08df31221c3a6a384299bc2060814ca6c5"
+      }
     },
     {
       "id": "perca-fluviatilis",
@@ -1223,7 +1475,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "planiliza-haematocheilus",
+        "path": "assets/fish/planiliza-haematocheilus-underwater-v1-display-dd1c05b13763-thumb.webp",
+        "original_sha256": "dd1c05b13763f39a5fd88a936dea1adad2ba31c6e6a7a51b44c2b16fb24f7816",
+        "sha256": "958e6bf34157925723242c658d43de1fbb38509f4dc1562352dd92d27dcc2c49",
+        "bytes": 1544626,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "ab6a949a73d9cbf2a0fa437c015b0b04bfc0c0c5577178b82b4e9e25a42c2486"
+      }
     },
     {
       "id": "rutilus-rutilus",
@@ -1304,7 +1570,21 @@
         "ui_loaded": true,
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
-      "acquisition_method": "OpenAI built-in imagegen; underwater style reference and species photograph"
+      "acquisition_method": "OpenAI built-in imagegen; underwater style reference and species photograph",
+      "thumbnail": {
+        "id": "cottus-koshewnikowi",
+        "path": "assets/fish/cottus-koshewnikowi-underwater-v1-display-d07fe558553b-thumb.webp",
+        "original_sha256": "d07fe558553b7ceb420f14924ab2fe1cbccb3e34285361c54e4f765b38fe18c8",
+        "sha256": "ae51068d5fc3553eb456aba183ff6b0e63618184cffcab4ca662d2cdb0eaf8bf",
+        "bytes": 1931148,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "5bde3da3c194735ea656a78ed0273b02b133dc9ded1f2e02f01a8531acaf9919"
+      }
     },
     {
       "id": "alosa-caspia",
@@ -1337,7 +1617,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "alosa-caspia",
+        "path": "assets/fish/alosa-caspia-underwater-v1-display-a442fb5f071e-thumb.webp",
+        "original_sha256": "a442fb5f071ef3d88eb9396e48b98c57ad7d45798e9f68f3602094ee10c1e9dd",
+        "sha256": "ac8be11a937bfd193038e23b494cac18ec3f4431e9a41887c196730033d3861c",
+        "bytes": 1747162,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "203c8ea666cc096a7501920d2eb9104602f00106e24277b3309064105e537302"
+      }
     },
     {
       "id": "perccottus-glenii",
@@ -1370,7 +1664,21 @@
         "ui_checked_at": "2026-09-30T23:42:52.450539+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "perccottus-glenii",
+        "path": "assets/fish/perccottus-glenii-underwater-v1-display-edc268ec37a2-thumb.webp",
+        "original_sha256": "edc268ec37a203e2ff1d42ef7881e60adb1c4fac05b6d11b00455afa46fa2579",
+        "sha256": "e75b89289f9433286bca04c0c770939ac8a84830fe61238938ee8441b1fcb436",
+        "bytes": 1797026,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "03d62d00983ae1faac2df597dfc02de5d1ac21ddd764045725b0eedd587fca75"
+      }
     },
     {
       "id": "belone-belone",
@@ -1403,7 +1711,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "belone-belone",
+        "path": "assets/fish/belone-belone-underwater-v1-display-4ea822844241-thumb.webp",
+        "original_sha256": "4ea8228442413e1541f1dcad20ba7f12aac75e7c63f6feff8f7ca76ef8e0cdee",
+        "sha256": "9c0746892d23842673f88037e5c1e6cfc9ffa0c20c564e6545c7dad7b3f47ef3",
+        "bytes": 1596158,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "adec9b6248d8d81f222e1143d41831f04bc00dac10fa9966e902120386d486fa"
+      }
     },
     {
       "id": "acipenser-stellatus",
@@ -1478,7 +1800,21 @@
         "taxon": "catalog_mapping_unverified_art",
         "generation_id": "exec-85d6ca89-a0e4-4aba-a193-66fc37d184c7"
       },
-      "acquisition_method": "OpenAI built-in imagegen; underwater style reference and species photograph"
+      "acquisition_method": "OpenAI built-in imagegen; underwater style reference and species photograph",
+      "thumbnail": {
+        "id": "clupea-harengus",
+        "path": "assets/fish/clupea-harengus-underwater-v1-display-0801ee831332-thumb.webp",
+        "original_sha256": "0801ee83133280cdfec97d9a522d684df214909857a4c68fe8f74dfa36827742",
+        "sha256": "f42ef8cf329767fa63c0efc9fb087321c41b51cd542395445573869b2fddce4b",
+        "bytes": 1602534,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "0f2b79209c4b33456c2bad1787d97fc25ea557112b93b4177e151fbb89516605"
+      }
     },
     {
       "id": "alosa-immaculata",
@@ -1511,7 +1847,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "alosa-immaculata",
+        "path": "assets/fish/alosa-immaculata-underwater-v1-display-fbaae12053d4-thumb.webp",
+        "original_sha256": "fbaae12053d46ecbf909658adf635351366c349727c917f8ed28ea0e55289b77",
+        "sha256": "7b23ed2bae5bef36b90135919f572b7d4c8e4e40cc49981e9052f47ba7482f3c",
+        "bytes": 1825682,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "b131897f280a6496871d60171c564c5e60cd72dfc2ba523a8e23e20a9a06ea50"
+      }
     },
     {
       "id": "salmo-salar",
@@ -1562,7 +1912,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-masou",
+        "path": "assets/fish/oncorhynchus-masou-underwater-v1-display-4ed803644e2b-thumb.webp",
+        "original_sha256": "4ed803644e2b7aaac1c15e9be6ca462a1c928fc69e5d881727bab46ba83b290f",
+        "sha256": "cf704efad4c1e6f95ccc7173f43da3c8b860ef775bbde20002b0f9d5141d2187",
+        "bytes": 1863110,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "c959aa11bebef7e8682098edc304db8eecf493e45f53999ee54a01384d2f9817"
+      }
     },
     {
       "id": "silurus-glanis",
@@ -1739,7 +2103,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "hucho-taimen",
+        "path": "assets/fish/hucho-taimen-underwater-v1-display-aec6311332ad-thumb.webp",
+        "original_sha256": "aec6311332ad1989657e3a7b6c99f7b524334c702c974451d06ad2879ca3e3c9",
+        "sha256": "f53e372f79e6c94a7f184db79a18a2589d81de097e97cdf2285b52a1b7e75cee",
+        "bytes": 1883654,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "73c2d0222ed365e8cd47e12b50e179919d128064368aa36c65095a2212c1bdb8"
+      }
     },
     {
       "id": "parahucho-perryi",
@@ -1772,7 +2150,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "parahucho-perryi",
+        "path": "assets/fish/parahucho-perryi-underwater-v1-display-0faf89ac2dca-thumb.webp",
+        "original_sha256": "0faf89ac2dcae0b352291aee394149f38f9d4e1909d7d25a3ed2e098bb3a0e82",
+        "sha256": "f78306502dc036e33fe6e77acbce321a3072c2a996647bf2fdc53074b83caa22",
+        "bytes": 1898028,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "776cf07be65d0700e9eef5d4220a3f8f8987efe84c3f7c152c199286845b516d"
+      }
     },
     {
       "id": "clupeonella-cultriventris",
@@ -1805,7 +2197,21 @@
         "ui_checked_at": "2026-09-30T22:49:15.383723+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "clupeonella-cultriventris",
+        "path": "assets/fish/clupeonella-cultriventris-underwater-v1-display-fa9c24b4b7bc-thumb.webp",
+        "original_sha256": "fa9c24b4b7bc5257f57c931df49a76b2f1cd08327e4a8b9c9e6886608dd49fdd",
+        "sha256": "e76b326d0b98361e46caf620ca23320efc9d3c92de2db3e9ce67a16d69fc6c6d",
+        "bytes": 1742696,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "dd83d7f0ee47debe191fd46921b6e5ad1749fc18e94f8ab91821144128f9612e"
+      }
     },
     {
       "id": "alburnus-alburnus",
@@ -1889,7 +2295,21 @@
         "ui_checked_at": "2026-09-30T20:35:27.138037+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "salmo-trutta",
+        "path": "assets/fish/salmo-trutta-underwater-v1-display-148108e6c473-thumb.webp",
+        "original_sha256": "148108e6c473d06d99f8483ad75b5fae1e42c1eb165bccd6a2c89747c83a7c39",
+        "sha256": "aecd6f64fec7c9696b9e4bcaa81b22c55c53e5efa2956178bbaa3fce73d507a2",
+        "bytes": 1784724,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "5bde9055bb190fb723a8edb5c3441bea93abfdd2a6105a01fb64810620199f02"
+      }
     },
     {
       "id": "thymallus-grubii",
@@ -1922,7 +2342,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "thymallus-grubii",
+        "path": "assets/fish/thymallus-grubii-underwater-v1-display-8c6733f6e21d-thumb.webp",
+        "original_sha256": "8c6733f6e21ddbe7a9b6ad8c52e1fb4409158d62f7a9fc2a8879e2b4207ea1ee",
+        "sha256": "66aee308734d3bd862e7dbbe96b97e4f6a3af949bb581b96ab9a2a7480b4e9b4",
+        "bytes": 1772602,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "16f9872a9762e4cfe56312a5eb6712cb7a3e39f376f73f1149043abf762b2774"
+      }
     },
     {
       "id": "thymallus-thymallus",
@@ -1955,7 +2389,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "thymallus-thymallus",
+        "path": "assets/fish/thymallus-thymallus-underwater-v1-display-923e3da9fe76-thumb.webp",
+        "original_sha256": "923e3da9fe76992163626039f7e4c05a6d81386f2ccb07b47b580599326b05ee",
+        "sha256": "b02770a5f4e1ab51e5446660b4bb9357cd64e628c1d6ea4030da86ff16a67504",
+        "bytes": 1919042,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "a140dc90223dbccf2cde031b21c75ec86d6e48d20477afa586c524ca86dfe3f6"
+      }
     },
     {
       "id": "thymallus-brevirostris",
@@ -1988,7 +2436,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "thymallus-brevirostris",
+        "path": "assets/fish/thymallus-brevirostris-underwater-v1-display-4781606a5f08-thumb.webp",
+        "original_sha256": "4781606a5f0815cb9778622f43b3749ac7d3d90aba88d0a66e5ae0cd2a68705a",
+        "sha256": "3318253747013857d132f3d12faeee87601c40808f13ce7dedba490034595e63",
+        "bytes": 1958348,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "8c263bd9189638be088a9bccf2236b5c6e669e09bfd406a0e6ea595b7fa4829b"
+      }
     },
     {
       "id": "thymallus-arcticus",
@@ -2021,7 +2483,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "thymallus-arcticus",
+        "path": "assets/fish/thymallus-arcticus-underwater-v1-display-ce0da3b4592c-thumb.webp",
+        "original_sha256": "ce0da3b4592cc111235789fa543470baf719d306196b121ad929d837ee7b43de",
+        "sha256": "adc44b03978566b48c71ca6f9a1833c1e462ac03b5408749aac757e63ed7dd8a",
+        "bytes": 1941992,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "660fcd7b44387380a95d2b2aacbdd9bbfc59dfbfc7f9b99c4254f772cb201034"
+      }
     },
     {
       "id": "oncorhynchus-tshawytscha",
@@ -2055,7 +2531,21 @@
         "ui_checked_at": "2026-09-30T21:39:33.837686+00:00"
       },
       "acquisition_method": "OpenAI built-in imagegen; project style and species references",
-      "legacy_image_replaced": true
+      "legacy_image_replaced": true,
+      "thumbnail": {
+        "id": "oncorhynchus-tshawytscha",
+        "path": "assets/fish/oncorhynchus-tshawytscha-underwater-v1-display-66bafdb4a65f-thumb.webp",
+        "original_sha256": "66bafdb4a65f3c86c029d78fec5ffe149cf129e1aacbc890aa409a8f516aabf9",
+        "sha256": "0d94d4bdb79babec17aaea91ce9aa1dac17d4840ef41fdefcd64523ce73fb8ee",
+        "bytes": 1657402,
+        "width": 1448,
+        "height": 1086,
+        "source_url": "",
+        "provider": "Project lossless WebP display copy",
+        "encoding": "lossless_webp",
+        "pixels_identical": true,
+        "pixels_sha256": "b762a594ad1ce2199ab23cb511416993097706d40b87dcf031e8f191158d33b4"
+      }
     },
     {
       "id": "pelecus-cultratus",
