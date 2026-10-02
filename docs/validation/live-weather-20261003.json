@@ -1,0 +1,41 @@
+{
+  "stage": "live_weather_v1",
+  "checked_at": "2026-10-02T22:49:23.632281+00:00",
+  "base_main": "b589573d7788782090437f55c19390b0fa26e354",
+  "loader_version": "stage2-desktop-0d19564503f7",
+  "status": "local_checks_passed",
+  "provider": "Open-Meteo",
+  "places": [
+    "Нижневартовск",
+    "Излучинск",
+    "Астрахань",
+    "Махачкала",
+    "Щербинка"
+  ],
+  "unit_contract_checks": 10,
+  "browser_checks": 8,
+  "console_errors": 0,
+  "viewport_widths": [
+    1280,
+    390,
+    320
+  ],
+  "source_kind": "weather_model",
+  "public_city_centres_only": true,
+  "private_coordinates_transmitted": false,
+  "public_constants_and_five_reports_preserved": true,
+  "fish_data_and_63_media_preserved": true,
+  "real_phone_checked": false,
+  "offline_failure_checked_with_mocked_provider": true,
+  "fresh_for_hours": 2,
+  "cache_and_visible_home_refresh_minutes": 30,
+  "retention_hours": 24,
+  "water_temperature_c": null,
+  "water_level_cm": null,
+  "fish_catch_probability": null,
+  "documentation": [
+    "https://open-meteo.com/en/docs",
+    "https://open-meteo.com/en/terms",
+    "https://open-meteo.com/en/licence"
+  ]
+}

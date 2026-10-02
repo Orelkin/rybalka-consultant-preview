@@ -88,10 +88,13 @@
   dashboard.id = 'desktop-dashboard';
   dashboard.className = 'desktop-only';
   document.getElementById('screen-home').appendChild(dashboard);
-  const dateText = () => new Intl.DateTimeFormat('ru-RU',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Moscow'}).format(new Date());
+  const dateText = () => new Intl.DateTimeFormat('ru-RU',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:window.LiveWeatherUI?.place().timezone || 'Asia/Yekaterinburg'}).format(new Date());
   function renderDate() {
     document.getElementById('desktopDate').textContent = dateText();
-    document.getElementById('desktopClock').textContent = new Intl.DateTimeFormat('ru-RU',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Moscow'}).format(new Date()) + ' МСК';
+    const homeDate=dashboard.querySelector('.ds-date');if(homeDate) homeDate.textContent=dateText();
+    const zone=window.LiveWeatherUI?.place().timezone || 'Asia/Yekaterinburg';
+    document.getElementById('desktopClock').textContent = new Intl.DateTimeFormat('ru-RU',{hour:'2-digit',minute:'2-digit',timeZone:zone}).format(new Date());
+    window.LiveWeatherUI?.refreshView();
   }
   function renderForecast() {
     const host = dashboard.querySelector('.ds-fish-list');
@@ -99,6 +102,7 @@
     host.innerHTML = [['Щука','Esox lucius'],['Судак','Sander lucioperca'],['Окунь','Perca fluviatilis']].map(([name,taxon]) => `<button class="ds-fish-row" type="button" data-desktop-fish="${name}">${image(window.FishMedia?.src({taxon}) || DATA.assets['fish_' + name],name)}<span><span class="ds-fish-heading">${name}<span aria-label="Прогноз не рассчитан">—</span></span><span class="ds-empty-bars" aria-hidden="true">${'<i></i>'.repeat(10)}</span><small>Открыть поведение и способы ловли</small></span></button>`).join('');
     dashboard.querySelectorAll('[data-desktop-day]').forEach(button => button.setAttribute('aria-pressed',String(Number(button.dataset.desktopDay) === selectedDay)));
     dashboard.querySelector('.ds-forecast-note').textContent = ['Сегодня','На завтра','На послезавтра'][selectedDay] + ': свежие условия не получены. Численный прогноз не рассчитан.';
+    window.LiveWeatherUI?.showDay(selectedDay);
   }
   function renderDashboard() {
     document.getElementById('desktopRegionLabel').textContent = regionLabel();
@@ -130,6 +134,7 @@
     dashboard._waters = waters;
     renderForecast();
     renderStatsPage();
+    window.LiveWeatherUI?.setRegion(region);
     renderDate();
   }
   function addPage(id,content) {
@@ -173,6 +178,9 @@
     }).catch(() => {});
   }
   window.addEventListener('rybalka-personal-data-changed', refreshPersonal);
+  window.addEventListener('rybalka-weather-region-selected',event=>{
+    if(event.detail?.region && region!==event.detail.region) {region=event.detail.region;renderDashboard();}
+  });
   // The store can finish opening after this classic script, without any writes.
   refreshPersonal();
   renderDashboard();

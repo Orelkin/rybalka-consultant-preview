@@ -1,0 +1,18 @@
+.lw-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px;font-size:11px;color:#c0d6e6}
+.lw-controls label{display:flex;align-items:center;gap:5px;min-width:0}
+.lw-controls select{max-width:190px;min-width:0;color:#e5f4ff;background:#0d2939;border:1px solid #2c526a;border-radius:7px;padding:5px 6px;font:inherit}
+.lw-controls button{color:#8cd1ff;border:1px solid #2b4c61;border-radius:7px;background:#0b2235;padding:5px 8px;font:inherit;white-space:nowrap}
+.lw-controls button:disabled{opacity:.65;cursor:wait}
+.lw-controls :focus-visible,.lw-source a:focus-visible{outline:2px solid #50b9ff;outline-offset:3px}
+.lw-source{display:flex;flex-wrap:wrap;gap:3px 9px;color:#bfd1df;font-size:10px;line-height:1.5;margin-top:9px}
+.lw-source a{color:#80c9f8;text-decoration:underline;text-underline-offset:2px}
+.lw-state{color:#c8e6eb}.lw-source>span:last-child{flex-basis:100%}
+.lw-mobile .weather-big{margin-top:15px}.lw-mobile .desc small{display:block;font-size:12px;margin-top:4px}
+.lw-mobile .metric .v{font-size:16px}.lw-mobile .metrics{margin-top:16px}
+.lw-mobile .lw-source{font-size:11px}.lw-mobile-days{display:flex;gap:8px;margin-top:10px}
+.lw-mobile-days>div{flex:1;padding:8px;border:1px solid #315061;border-radius:9px;background:#081a29a8}
+.lw-mobile-days small{display:block;color:#bfd3e2;font-size:10px}.lw-mobile-days strong{display:block;font-size:14px;margin-top:3px}
+.lw-icon{font-size:54px;line-height:1}.lw-top-icon{font-size:33px;line-height:1}
+.lw-daily{display:block;color:#caeaff;font-size:11px;margin:3px 0 5px}
+@media(min-width:1100px){.ds-today .ds-weather{margin-top:12px}.ds-today .ds-conditions-link{margin-bottom:12px}.ds-top-time>span{display:block;font-size:10px;line-height:1.7}.ds-today .ds-metric strong{font-size:12px}.ds-today .lw-source{font-size:9px;line-height:1.3;margin-top:10px}}
+@media(max-width:359px){.lw-controls{font-size:10px;gap:5px}.lw-controls select{max-width:145px}.lw-mobile .weather-big .temp{font-size:48px}.lw-mobile .metric .v{font-size:14px}.lw-mobile-days>div{padding:6px}.lw-mobile-days strong{font-size:12px}}
