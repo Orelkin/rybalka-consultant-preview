@@ -3,7 +3,7 @@
   "checked_at": "2026-10-02T22:49:23.632281+00:00",
   "base_main": "b589573d7788782090437f55c19390b0fa26e354",
   "loader_version": "stage2-desktop-0d19564503f7",
-  "status": "local_checks_passed",
+  "status": "published_and_render_verified",
   "provider": "Open-Meteo",
   "places": [
     "Нижневартовск",
@@ -37,5 +37,8 @@
     "https://open-meteo.com/en/docs",
     "https://open-meteo.com/en/terms",
     "https://open-meteo.com/en/licence"
-  ]
+  ],
+  "functional_main": "6f5043e54dd80695948ef38b1276e055c4b41f00",
+  "public_runtime_files_verified": 17,
+  "public_render_desktop_and_390_verified": true
 }
