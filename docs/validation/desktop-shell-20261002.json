@@ -1,0 +1,355 @@
+{
+  "date": "2026-10-02",
+  "checks": [
+    {
+      "kind": "route",
+      "route": "home",
+      "active": "screen-home",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "map",
+      "active": "screen-map",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "research",
+      "active": "screen-research",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "diary",
+      "active": "screen-diary",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "waters",
+      "active": "screen-waters",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "fish",
+      "active": "screen-fish",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "methods",
+      "active": "screen-methods",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "gear",
+      "active": "screen-gear",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "lures",
+      "active": "screen-lures",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "researchbase",
+      "active": "screen-researchbase",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "trips",
+      "active": "screen-trips",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "knowledge",
+      "active": "screen-knowledge",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "desktopstats",
+      "active": "screen-desktopstats",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "route",
+      "route": "desktopsettings",
+      "active": "screen-desktopsettings",
+      "horizontalOverflow": false,
+      "passed": true
+    },
+    {
+      "kind": "forecast-day",
+      "text": "На завтра: свежие условия не получены. Численный прогноз не рассчитан.",
+      "passed": true
+    },
+    {
+      "kind": "region-context",
+      "label": "Астраханская область",
+      "passed": true
+    },
+    {
+      "kind": "region-detail",
+      "passed": true
+    },
+    {
+      "kind": "search",
+      "text": "«Судак» · найдено 8",
+      "passed": true
+    },
+    {
+      "kind": "fish-transition",
+      "fish": "Щука",
+      "title": "Щука",
+      "active": "screen-fishprofile",
+      "passed": true
+    },
+    {
+      "kind": "fish-transition",
+      "fish": "Судак",
+      "title": "Судак обыкновенный",
+      "active": "screen-fishprofile",
+      "passed": true
+    },
+    {
+      "kind": "fish-transition",
+      "fish": "Окунь",
+      "title": "Окунь речной обыкновенный",
+      "active": "screen-fishprofile",
+      "passed": true
+    },
+    {
+      "kind": "water-detail",
+      "passed": true
+    },
+    {
+      "kind": "incomplete-diary",
+      "passed": true
+    },
+    {
+      "kind": "trip-detail",
+      "passed": true
+    },
+    {
+      "kind": "new-diary-form",
+      "opened": true,
+      "cancelled": true,
+      "passed": true
+    },
+    {
+      "kind": "responsive",
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "bottomNavVisible": false,
+      "desktopVisible": true,
+      "nativeHeaderVisible": false,
+      "scrollWidth": 1265,
+      "width": 1265,
+      "passed": true
+    },
+    {
+      "kind": "responsive",
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "bottomNavVisible": false,
+      "desktopVisible": true,
+      "nativeHeaderVisible": false,
+      "scrollWidth": 1085,
+      "width": 1085,
+      "passed": true
+    },
+    {
+      "kind": "responsive",
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "bottomNavVisible": true,
+      "desktopVisible": false,
+      "nativeHeaderVisible": true,
+      "scrollWidth": 1009,
+      "width": 1009,
+      "passed": true
+    },
+    {
+      "kind": "responsive",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "bottomNavVisible": true,
+      "desktopVisible": false,
+      "nativeHeaderVisible": true,
+      "scrollWidth": 375,
+      "width": 375,
+      "passed": true
+    },
+    {
+      "kind": "responsive",
+      "size": {
+        "width": 320,
+        "height": 740
+      },
+      "bottomNavVisible": true,
+      "desktopVisible": false,
+      "nativeHeaderVisible": true,
+      "scrollWidth": 305,
+      "width": 305,
+      "passed": true
+    },
+    {
+      "kind": "mobile-catalog",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "kind": "mobile-short-name-link",
+      "name": "Судак обыкновенный",
+      "passed": true
+    }
+  ],
+  "realPhoneVerified": false,
+  "consoleSince": "2026-10-02T05:00:43.631Z",
+  "images": [
+    {
+      "alt": "Щука",
+      "loaded": true,
+      "src": "assets/fish/esox-lucius.webp"
+    },
+    {
+      "alt": "Судак",
+      "loaded": true,
+      "src": "assets/fish/sander-lucioperca.webp"
+    },
+    {
+      "alt": "Окунь",
+      "loaded": true,
+      "src": "assets/fish/perca-fluviatilis.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/lakeshore-hero.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/lakeshore-hero.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/lakeshore-hero.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/lakeshore-hero.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/lakeshore-hero.webp"
+    },
+    {
+      "alt": "",
+      "loaded": true,
+      "src": "assets/desktop/forest-lake.webp"
+    }
+  ],
+  "errors": [],
+  "allPassed": true,
+  "base_main": "ed230cfadc0f3018b68582b5e8ce2e56e31ca51b",
+  "loader_version": "stage2-desktop-dfff02234a37",
+  "public_data_preserved": true,
+  "publication_status": "browser_verified_locally",
+  "new_assets": [
+    {
+      "id": "lakeshore-hero",
+      "web_path": "assets/desktop/lakeshore-hero.webp",
+      "web_sha256": "85ed414fc151c6e5a4a8142539a692b09c0eef4d6393eabb66beadddd48d085a",
+      "web_bytes": 123978
+    },
+    {
+      "id": "forest-lake",
+      "web_path": "assets/desktop/forest-lake.webp",
+      "web_sha256": "93c1079161051af73b2cb987611647b697c8b41ba5d5e3207c9947fcbfc456bd",
+      "web_bytes": 272882
+    }
+  ]
+}
