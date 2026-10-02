@@ -442,6 +442,118 @@
           "empty_text": "Для поездки укажите водоём, регион и дату. Сроки запрета, разрешённые способы и нормы вылова проверяются отдельно; универсальное разрешение на ловлю жереха не задано."
         }
       ]
+    },
+    {
+      "id": "silurus-glanis",
+      "catalog_name": "Сом обыкновенный",
+      "scientific_name": "Silurus glanis",
+      "reviewed_at": "2026-10-03",
+      "sections": [
+        {
+          "id": "passport",
+          "title": "Паспорт вида",
+          "tab": "overview",
+          "claim_ids": [
+            "catfish-taxonomy",
+            "catfish-size"
+          ]
+        },
+        {
+          "id": "recognition",
+          "title": "Как отличить",
+          "tab": "overview",
+          "claim_ids": [
+            "catfish-recognition"
+          ]
+        },
+        {
+          "id": "habitat",
+          "title": "Где обитает",
+          "tab": "where",
+          "claim_ids": [
+            "catfish-habitat"
+          ]
+        },
+        {
+          "id": "environment",
+          "title": "Температура, течение и условия",
+          "tab": "where",
+          "claim_ids": [
+            "catfish-environment",
+            "catfish-observation-fields"
+          ]
+        },
+        {
+          "id": "search",
+          "title": "Где искать и с чего начать",
+          "tab": "where",
+          "claim_ids": [
+            "catfish-search"
+          ]
+        },
+        {
+          "id": "food",
+          "title": "Питание и кормовая база",
+          "tab": "overview",
+          "claim_ids": [
+            "catfish-food"
+          ]
+        },
+        {
+          "id": "season",
+          "title": "Сезон и нерест",
+          "tab": "season",
+          "claim_ids": [
+            "catfish-spawning"
+          ]
+        },
+        {
+          "id": "time",
+          "title": "Время суток и поведение",
+          "tab": "season",
+          "claim_ids": [
+            "catfish-diel"
+          ]
+        },
+        {
+          "id": "methods",
+          "title": "Методы, приманки и оснастки",
+          "tab": "how",
+          "claim_ids": [
+            "catfish-methods"
+          ]
+        },
+        {
+          "id": "tactics",
+          "title": "Подача и тактика",
+          "tab": "how",
+          "claim_ids": [
+            "catfish-presentation"
+          ]
+        },
+        {
+          "id": "experience",
+          "title": "Мой опыт",
+          "tab": "how",
+          "claim_ids": [],
+          "empty_text": "Подтверждённых личных отчётов по сому пока нет. Новые наблюдения и уловы сохраняйте в дневнике; выводы о рабочей тактике появятся после проверки записей."
+        },
+        {
+          "id": "mistakes",
+          "title": "Типичные ошибки",
+          "tab": "tips",
+          "claim_ids": [
+            "catfish-mistakes"
+          ]
+        },
+        {
+          "id": "rules",
+          "title": "Регион и правила",
+          "tab": "tips",
+          "claim_ids": [],
+          "empty_text": "Укажите водоём, регион и дату поездки. Действующие сроки запрета, разрешённые способы и нормы вылова проверяются отдельно."
+        }
+      ]
     }
   ]
 }

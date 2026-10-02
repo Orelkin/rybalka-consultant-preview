@@ -1,4 +1,5 @@
 const FC_EVIDENCE = {
+  reference_review:'Биология · видовой справочник',
   official_review:'Биология · официальный обзор', primary_research:'Научное исследование',
   personal_report:'Личный опыт', editorial_practice:'Практика · требует проверки'
 };

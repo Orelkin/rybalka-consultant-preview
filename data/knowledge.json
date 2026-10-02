@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewed_at": "2026-10-01",
+  "reviewed_at": "2026-10-03",
   "sources": [
     {
       "id": "fws-zander-2019",
@@ -274,6 +274,70 @@
       "limits": "Два отдельных случая. Точный день, условия воды и размеры жереха не восстановлены; по Красному Яру детали улова неполные. В статистику успешных рыбалок этот сценарий пока не включён.",
       "grade": "PERSONAL",
       "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "ec-catfish-2026",
+      "title": "European Commission — Silurus glanis",
+      "url": "https://fish-commercial-names.ec.europa.eu/fish-names/species/silurus-glanis_en",
+      "kind": "official_review",
+      "read_scope": "Scientific name, author, family, habitat and morphological description. The page cites FishBase.",
+      "limits": "Видовой справочник: название и диагностические признаки. Не прогноз клёва и не местные правила.",
+      "grade": "A",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "fws-catfish-erss",
+      "title": "USFWS — Wels Catfish: Ecological Risk Screening Summary, 2014",
+      "url": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Wels-Catfish.pdf",
+      "kind": "official_review",
+      "read_scope": "Relevant excerpts only: Taxonomic Hierarchy (PDF p. 2), Short description and Biology (PDF p. 4). Habitat and diet; not the full report. Old size/weight maxima and numerical climate range excluded.",
+      "limits": "Обзор с прежними версиями FishBase. Используются места обитания и питание; старые рекорды и температурная шкала исключены.",
+      "grade": "A",
+      "reviewed_at": "2026-10-03",
+      "year": 2014
+    },
+    {
+      "id": "fishbase-catfish-2026",
+      "title": "FishBase — Silurus glanis",
+      "url": "https://www.fishbase.se/summary/Silurus-glanis.html",
+      "kind": "reference_review",
+      "read_scope": "Size/Weight/Age, Biology and Life cycle and mating behavior on the FishBase .se mirror. Referenced original works were not read in full.",
+      "limits": "Сводный справочник. Рекорды не описывают обычный улов; нерестовые сроки и условия выбранного водоёма отдельно не проверены. Полный текст цитируемых книг не прочитан.",
+      "grade": "B",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "santos-catfish-2025",
+      "title": "Santos et al., 2025 — поведение сома в водохранилище Belver",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/eff.12817",
+      "kind": "primary_research",
+      "read_scope": "Publisher abstract and relevant Methods excerpts: 10 adult fish, acoustic telemetry, accelerometers and pressure sensors. Not the full paper.",
+      "limits": "Десять взрослых рыб, водохранилище Belver на Тежу, Португалия. Прочитаны аннотация и фрагменты методов. Движения не равны поклёвкам; глубины не перенесены на другие водоёмы.",
+      "grade": "A",
+      "reviewed_at": "2026-10-03",
+      "year": 2025
+    },
+    {
+      "id": "bergstrom-catfish-2024",
+      "title": "Bergström et al., 2024 — суточные и сезонные движения сома в озере Мёккельн",
+      "url": "https://www.diva-portal.org/smash/get/diva2:1891105/FULLTEXT01.pdf",
+      "kind": "primary_research",
+      "read_scope": "Published version in Linnaeus University DiVA repository: metadata, complete abstract and Key Contribution only. Long-term depth/temperature records from 11 recovered tags. Not the full paper.",
+      "limits": "Озеро Мёккельн, Швеция; долговременные данные 11 меток. Прочитана аннотация опубликованной статьи. Вывод относится к северной популяции и не задаёт часы клёва в России.",
+      "grade": "A",
+      "reviewed_at": "2026-10-03",
+      "year": 2024,
+      "doi": "10.3390/fishes9070280"
+    },
+    {
+      "id": "stage2-catfish-practice",
+      "title": "Практика поиска и ловли сома — рабочие сценарии",
+      "url": null,
+      "kind": "editorial_practice",
+      "read_scope": "Saved legacy-profiles.json: where, how, presentation, mistakes; editorial adaptation and an observation checklist. No local trial comparing methods or lures.",
+      "limits": "Практические сценарии для проверки на месте. Локальных сравнений методов и подтверждённых личных уловов сома в сохранённых отчётах пока нет.",
+      "grade": "PRACTICE",
+      "reviewed_at": "2026-10-03"
     }
   ],
   "claims": [
@@ -905,6 +969,162 @@
       "scope": "Практические предостережения. Осторожность и причины отсутствия контакта проверяются наблюдениями, а не объявляются законом вида.",
       "status": "practice",
       "reviewed_at": "2026-10-01"
+    },
+    {
+      "id": "catfish-taxonomy",
+      "species_id": "silurus-glanis",
+      "text": "Сом обыкновенный — Silurus glanis Linnaeus, 1758, семейство Сомовые (Siluridae). Пресноводный хищник; встречается также в солоноватой воде.",
+      "source_ids": [
+        "ec-catfish-2026"
+      ],
+      "evidence": "official_review",
+      "scope": "Название, семейство и среда обитания. Наличие вида в выбранной точке этим не подтверждается.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-size",
+      "species_id": "silurus-glanis",
+      "text": "FishBase приводит подтверждённые рекорды длины 273 см и массы 130 кг. Это рекордные значения, не обычный размер улова. Для возраста указан максимум 80 лет, без оценки типичной продолжительности жизни.",
+      "source_ids": [
+        "fishbase-catfish-2026"
+      ],
+      "evidence": "reference_review",
+      "scope": "Максимумы из справочника. Значения 5 м и 306 кг в его биологическом разделе отмечены как ошибочные исторические записи.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-recognition",
+      "species_id": "silurus-glanis",
+      "text": "Тело без чешуи, крупная уплощённая голова и две пары усиков на подбородке. Анальный плавник очень длинный, почти до хвостового; жирового плавника нет. Хвост округлый или усечённый. Проверяйте сочетание признаков, а не одну окраску.",
+      "source_ids": [
+        "ec-catfish-2026"
+      ],
+      "evidence": "official_review",
+      "scope": "Диагностические признаки вида из справочника. Это описание рыбы, а не независимая проверка изображения карточки.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-habitat",
+      "species_id": "silurus-glanis",
+      "text": "Живёт в крупных и средних равнинных реках, затонах и заросших озёрах. В водохранилищах использует в том числе глубокие участки. Кормиться может у дна и в толще воды; присутствие глубины само по себе не подтверждает стоянку сома.",
+      "source_ids": [
+        "fws-catfish-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Обобщённые места обитания и горизонт питания. Последняя оговорка ограничивает применение справочника: карта глубин не является наблюдением рыбы.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-environment",
+      "species_id": "silurus-glanis",
+      "text": "В исследовании десяти взрослых сомов в водохранилище Belver глубины и активность менялись по сезонам, а суточная картина различалась между рыбами. Для этой популяции активность была связана с расходом реки, температурой воды и длиной светового дня.",
+      "source_ids": [
+        "santos-catfish-2025"
+      ],
+      "evidence": "primary_research",
+      "scope": "Аннотация и методы исследования в Португалии. Статистические связи не доказывают причинность и не дают универсальный прогноз поклёвок.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-observation-fields",
+      "species_id": "silurus-glanis",
+      "text": "Запишите температуру воды при измерении, течение, изменение уровня, глубину и соседний кормовой участок, время суток и наличие контактов. Температуру воздуха храните отдельно от воды. Неизвестные кислород, уровень или кормовую базу оставляйте неизвестными.",
+      "source_ids": [
+        "stage2-catfish-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Рабочий порядок наблюдений для сравнения выездов. Порог «идеального клёва» по температуре, давлению или кислороду не задан.",
+      "status": "practice",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-search",
+      "species_id": "silurus-glanis",
+      "text": "Проверьте связку «глубина или укрытие + выход + кормовой участок»: край ямы, соседнюю бровку, полку или границу течения. Сумеречный и ночной выход проверяйте наблюдением. Если контактов нет, меняйте участок или горизонт, а не только приманку.",
+      "source_ids": [
+        "stage2-catfish-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Схема поиска из сохранённого практического профиля с редакционной адаптацией. Каждая точка требует проверки на конкретном водоёме.",
+      "status": "practice",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-food",
+      "species_id": "silurus-glanis",
+      "text": "Молодь питается донными беспозвоночными и рыбой. В рационе взрослых — рыбы и другие водные позвоночные. Поэтому выбранную подачу сопоставляйте с местной кормовой базой; описание рациона не доказывает превосходство одной насадки или приманки.",
+      "source_ids": [
+        "fws-catfish-erss"
+      ],
+      "evidence": "official_review",
+      "scope": "Обзор питания по стадиям жизни. Рыболовное применение — ограниченная интерпретация, без испытаний конкретных приманок.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-spawning",
+      "species_id": "silurus-glanis",
+      "text": "Самец готовит гнездо, используя растительный материал или очищенный субстрат, и охраняет его до появления личинок. Единого помесячного календаря для всех водоёмов здесь нет: местные сроки нереста и ограничения нужно проверять для выбранного участка и даты.",
+      "source_ids": [
+        "fishbase-catfish-2026"
+      ],
+      "evidence": "reference_review",
+      "scope": "Прочитан раздел Life cycle and mating behavior. Численная температура инкубации не используется как порог активности или срок нереста.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-diel",
+      "species_id": "silurus-glanis",
+      "text": "В озере Мёккельн в Швеции долговременные записи 11 меток показали ночные подъёмы от дна к поверхности летом и поздней осенью; днём рыбы преимущественно оставались у дна. Это пример того, почему поиск сома не стоит ограничивать только донным горизонтом.",
+      "source_ids": [
+        "bergstrom-catfish-2024"
+      ],
+      "evidence": "primary_research",
+      "scope": "Аннотация опубликованного исследования северной популяции. Подъёмы трактуются как поведение, а не доказательство поклёвок; время выхода проверяется локально.",
+      "status": "reviewed",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-methods",
+      "species_id": "silurus-glanis",
+      "text": "Рабочие варианты — донная ловля, тяжёлый спиннинг и квок с лодки. Выбирайте метод под доступный участок, течение и местные ограничения. Для спиннинга важна управляемая подача в выбранном горизонте; для донной ловли — устойчивый монтаж. До ловли оцените снасть и место вываживания.",
+      "source_ids": [
+        "stage2-catfish-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Перечень методов из практического профиля и редакционный порядок выбора. Универсальные веса, размеры крючков и преимущества квока не установлены.",
+      "status": "practice",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-presentation",
+      "species_id": "silurus-glanis",
+      "text": "Начните с выбранной бровки или выхода из глубины. Меняйте один параметр за раз: горизонт, скорость подачи либо участок. Отмечайте проходы, контакты и время; повторяйте удачную подачу в сходных условиях. Квок и донная ловля требуют отдельного сценария под водоём.",
+      "source_ids": [
+        "stage2-catfish-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Проверяемая рабочая тактика. Не экспериментальное доказательство оптимальной проводки; отсутствие контакта не означает отсутствия рыбы.",
+      "status": "practice",
+      "reviewed_at": "2026-10-03"
+    },
+    {
+      "id": "catfish-mistakes",
+      "species_id": "silurus-glanis",
+      "text": "Не считайте самую глубокую яму автоматически рабочей точкой и не сводите всю ловлю только ко дну. Не переносите чужие часы активности и глубины на свой водоём. Записывайте также нулевые выезды: без них оценка успешной тактики будет искажена.",
+      "source_ids": [
+        "stage2-catfish-practice"
+      ],
+      "evidence": "editorial_practice",
+      "scope": "Практические предостережения и правило учёта отрицательного результата. Личный подтверждённый паттерн по сому пока отсутствует.",
+      "status": "practice",
+      "reviewed_at": "2026-10-03"
     }
   ]
 }

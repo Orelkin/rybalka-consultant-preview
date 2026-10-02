@@ -1,0 +1,167 @@
+{
+  "base_local": "04b5603fe7bf6acac7e102d1f0d962ef7a25564f",
+  "base_remote": "776d0abca40db18365acedb7f9581ad48213e743",
+  "species_id": "silurus-glanis",
+  "sections": 13,
+  "claims_added": 13,
+  "sources_added": 6,
+  "total_cards": 5,
+  "total_claims": 65,
+  "total_sources": 33,
+  "prior_cards_claims_and_sources_unchanged": true,
+  "all_63_image_hashes_unchanged": true,
+  "image_review_statuses_unchanged": true,
+  "public_constants_unchanged": true,
+  "knowledge_json_js_match": true,
+  "knowledge_digest": "18eed78be0",
+  "component_digest": "5a6b0d99fc",
+  "loader_version": "stage2-desktop-8a87c4338c49",
+  "independent_image_verification": false,
+  "confirmed_personal_catfish_reports": 0,
+  "browser": {
+    "species_id": "silurus-glanis",
+    "tabs": [
+      {
+        "claims": [
+          "catfish-taxonomy",
+          "catfish-size",
+          "catfish-recognition",
+          "catfish-food"
+        ],
+        "sections": [
+          "passport",
+          "recognition",
+          "food"
+        ],
+        "tab": "overview"
+      },
+      {
+        "claims": [
+          "catfish-habitat",
+          "catfish-environment",
+          "catfish-observation-fields",
+          "catfish-search"
+        ],
+        "sections": [
+          "habitat",
+          "environment",
+          "search"
+        ],
+        "tab": "where"
+      },
+      {
+        "claims": [
+          "catfish-methods",
+          "catfish-presentation"
+        ],
+        "sections": [
+          "methods",
+          "tactics",
+          "experience"
+        ],
+        "tab": "how"
+      },
+      {
+        "claims": [
+          "catfish-spawning",
+          "catfish-diel"
+        ],
+        "sections": [
+          "season",
+          "time"
+        ],
+        "tab": "season"
+      },
+      {
+        "claims": [
+          "catfish-mistakes"
+        ],
+        "sections": [
+          "mistakes",
+          "rules"
+        ],
+        "tab": "tips"
+      }
+    ],
+    "source_entries": [
+      {
+        "title": "European Commission — Silurus glanis",
+        "url": "https://fish-commercial-names.ec.europa.eu/fish-names/species/silurus-glanis_en"
+      },
+      {
+        "title": "USFWS — Wels Catfish: Ecological Risk Screening Summary, 2014",
+        "url": "https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Wels-Catfish.pdf"
+      },
+      {
+        "title": "FishBase — Silurus glanis",
+        "url": "https://www.fishbase.se/summary/Silurus-glanis.html"
+      },
+      {
+        "title": "Santos et al., 2025 — поведение сома в водохранилище Belver",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/eff.12817"
+      },
+      {
+        "title": "Bergström et al., 2024 — суточные и сезонные движения сома в озере Мёккельн",
+        "url": "https://www.diva-portal.org/smash/get/diva2:1891105/FULLTEXT01.pdf"
+      },
+      {
+        "title": "Практика поиска и ловли сома — рабочие сценарии"
+      }
+    ],
+    "research_reading_limits_disclosed": true,
+    "personal_reports_empty": true,
+    "desktop": {
+      "hero": [
+        {
+          "loaded": true,
+          "src": "assets/fish/silurus-glanis.webp"
+        }
+      ],
+      "referencesLabel": "Биология · видовой справочник · источник и применимость",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "mobile": [
+      {
+        "claims": 4,
+        "scrollWidth": 375,
+        "sections": 3,
+        "tab": "overview",
+        "width": 375
+      },
+      {
+        "claims": 4,
+        "scrollWidth": 375,
+        "sections": 3,
+        "tab": "where",
+        "width": 375
+      },
+      {
+        "claims": 2,
+        "scrollWidth": 375,
+        "sections": 3,
+        "tab": "how",
+        "width": 375
+      },
+      {
+        "claims": 2,
+        "scrollWidth": 375,
+        "sections": 2,
+        "tab": "season",
+        "width": 375
+      },
+      {
+        "claims": 1,
+        "scrollWidth": 390,
+        "sections": 2,
+        "tab": "tips",
+        "width": 390
+      }
+    ],
+    "observed_errors": [],
+    "viewport_override_reset": true,
+    "real_phone_verified": false
+  },
+  "all_local_checks_passed": true,
+  "real_phone_verified": false
+}
