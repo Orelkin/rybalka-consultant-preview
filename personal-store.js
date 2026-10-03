@@ -7,13 +7,14 @@
   const DIARY = 'diary';
   const GEAR = 'gear';
   const FORMAT = 'rybalka-personal-backup';
-  const FORMAT_VERSION = 2;
+  const FORMAT_VERSION = 3;
   const GEAR_FORMAT = 'rybalka-personal-gear';
   const MAX_BACKUP_BYTES = 8 * 1024 * 1024;
   const MAX_RECORDS = 5000;
   const LIMITS = Object.freeze({ date: 10, location: 160, fish: 200, result: 1000, method: 1500, conclusion: 3000, notes: 6000 });
   const GEAR_LIMITS = Object.freeze({ name: 200, category: 80, notes: 6000, reel: 200, line: 200, leader: 200 });
   const FIELDS = Object.keys(LIMITS);
+  const DIARY_FIELDS = [...FIELDS, 'context'];
   const GEAR_FIELDS = ['modelId', 'name', 'category', 'setup', 'notes'];
   const META_FIELDS = ['id', 'createdAt', 'updatedAt', 'archived', 'archivedAt'];
   let dbPromise;
@@ -52,6 +53,7 @@
     calendarDate(record.date);
     if (!record.location) fail('Укажите место рыбалки.');
     if (!record.result) fail('Укажите результат рыбалки; неизвестный улов можно так и записать.');
+    record.context = global.DiaryContext.normalize(value.context);
     return record;
   }
   function identifier(value) {
@@ -91,10 +93,10 @@
     return { id, createdAt, updatedAt, archived: value.archived, archivedAt };
   }
   function backupRecord(value, collection = DIARY) {
-    const allowed = collection === GEAR ? GEAR_FIELDS : FIELDS;
+    const allowed = collection === GEAR ? GEAR_FIELDS : DIARY_FIELDS;
     object(value, 'Запись в копии');
     keys(value, [...allowed, ...META_FIELDS], 'Запись в копии');
-    requiredKeys(value, [...allowed, ...META_FIELDS], 'Запись в копии');
+    requiredKeys(value, [...(collection === GEAR ? GEAR_FIELDS : FIELDS), ...META_FIELDS], 'Запись в копии');
     if (collection === GEAR) requiredKeys(value.setup, ['reel', 'line', 'leader'], 'Комплект в копии');
     const meta = metadata(value);
     return { id: meta.id, ...(collection === GEAR ? gearFields(value) : fields(value)), ...meta };
@@ -125,12 +127,12 @@
     payload = parsePayload(payload);
     if (payload.format === 'fishing-consultant') fail('Это копия ранней PWA. Для неё нужен отдельный проверенный перенос; текущая база не изменена.');
     keys(payload, ['format', 'version', 'exportedAt', 'data'], 'Копия');
-    if (payload.format !== FORMAT || ![1, FORMAT_VERSION].includes(payload.version)) fail('Формат или версия копии не поддерживаются.');
+    if (payload.format !== FORMAT || ![1, 2, FORMAT_VERSION].includes(payload.version)) fail('Формат или версия копии не поддерживаются.');
     const exportedAt = timestamp(payload.exportedAt, 'Экспорт');
     object(payload.data, 'Данные копии');
     keys(payload.data, payload.version === 1 ? [DIARY] : [DIARY, GEAR], 'Данные копии');
     const records = validateRecords(payload.data.diary, DIARY);
-    const hasGear = payload.version === FORMAT_VERSION;
+    const hasGear = payload.version >= 2;
     const gearRecords = hasGear ? validateRecords(payload.data.gear, GEAR) : [];
     return { format: FORMAT, version: payload.version, exportedAt, count: records.length, records, gearCount: gearRecords.length, gearRecords, hasGear };
   }
@@ -247,7 +249,7 @@
   async function collectionAdd(collection, value) {
     const isGear = collection === GEAR;
     object(value, isGear ? 'Снасть' : 'Запись');
-    keys(value, isGear ? ['id', ...GEAR_FIELDS] : FIELDS, isGear ? 'Снасть' : 'Запись');
+    keys(value, isGear ? ['id', ...GEAR_FIELDS] : DIARY_FIELDS, isGear ? 'Снасть' : 'Запись');
     const normalized = isGear ? gearFields(value) : fields(value);
     const now = nextTime();
     const id = isGear && value.id !== undefined ? identifier(value.id) : newId(collection);
@@ -263,7 +265,7 @@
   async function collectionUpdate(collection, id, changes) {
     identifier(id);
     object(changes, 'Изменения');
-    keys(changes, collection === GEAR ? GEAR_FIELDS : FIELDS, 'Изменения');
+    keys(changes, collection === GEAR ? GEAR_FIELDS : DIARY_FIELDS, 'Изменения');
     return transaction('readwrite', (data, stores, done) => {
       const old = data[collection].find(record => record.id === id);
       if (!old) fail('Запись не найдена.');
@@ -304,6 +306,12 @@
     return payload;
   }
   function mergeRecords(existingRecords, incomingRecords) {
+    // Older records have no context; this is equivalent to an empty snapshot.
+    const stable = value => JSON.stringify(value, (key, item) => {
+      if (key === 'context' && item === null) return undefined;
+      if (item && !Array.isArray(item) && typeof item === 'object') return Object.fromEntries(Object.keys(item).sort().map(k=>[k,item[k]]));
+      return item;
+    });
     const existing = new Map(existingRecords.map(record => [record.id, record]));
     const summary = { added: 0, updated: 0, unchanged: 0, conflicts: 0, total: existing.size };
     const writes = [];
@@ -318,7 +326,7 @@
         existing.set(incoming.id, incoming);
         writes.push({ record: incoming, add: false });
         summary.updated++;
-      } else if (incoming.updatedAt === old.updatedAt && JSON.stringify(incoming) !== JSON.stringify(old)) summary.conflicts++;
+      } else if (incoming.updatedAt === old.updatedAt && stable(incoming) !== stable(old)) summary.conflicts++;
       else summary.unchanged++;
     }
     summary.total = existing.size;

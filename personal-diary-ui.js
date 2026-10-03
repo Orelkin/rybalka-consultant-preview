@@ -10,6 +10,7 @@
   const fields=['date','location','fish','result','method','conclusion','notes'];
   const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const message=(text,error=false)=>{status.textContent=text;status.classList.toggle('pd-error',error);};
+  const trip=DiaryContextUI.create(form,message);
   const element=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
   function button(text,action){const b=element('button','pd-button',text);b.type='button';b.addEventListener('click',action);return b;}
   function openForm(record){
@@ -20,6 +21,7 @@
     for(const key of fields.filter(k=>k!=='date'))form.elements[key].value=record?.[key]||'';
     form.querySelector('h3').textContent=record?'Изменить запись':'Новая рыбалка';
     form.hidden=false;form.elements.location.focus();
+    trip.reset(record?.context);
   }
   async function refresh(){
     records=await PersonalStore.list({includeArchived:true});
@@ -39,6 +41,7 @@
       for(const [key,label] of [['method','Метод'],['conclusion','Вывод'],['notes','Заметки']]){
         if(r[key])card.append(element('strong','',label),element('p','pd-text',r[key]));
       }
+      DiaryContextUI.renderCard(card,r.context,r.location);
       const actions=element('div','pd-actions');
       if(!r.archived)actions.append(button('Изменить',()=>openForm(r)));
       actions.append(button(r.archived?'Восстановить':'В архив',async()=>{
@@ -51,21 +54,24 @@
   host.querySelector('[data-action="new"]').addEventListener('click',()=>openForm());
   window.addEventListener('rybalka-voice-draft',event=>{
     const draft=event.detail;if(!draft?.text)return;
-    openForm();
+    if(form.hidden)openForm();
     const values={location:draft.location,fish:draft.fish,result:draft.result,method:draft.method,conclusion:draft.conclusion};
     const limits={location:160,fish:200,result:1000,method:1500,conclusion:3000};
-    for(const [key,value] of Object.entries(values))if(value&&value.length<=limits[key])form.elements[key].value=value;
-    form.elements.notes.value='Исходная голосовая заметка:\n'+draft.text;
-    message('Выжимка перенесена в новую запись. Проверьте место, дату и улов; исходный текст сохранится в заметках.');
+    for(const [key,value] of Object.entries(values))if(value&&value.length<=limits[key]&&!form.elements[key].value.trim())form.elements[key].value=value;
+    const notes=[form.elements.notes.value,'Исходная голосовая заметка:\n'+draft.text].filter(Boolean).join('\n\n');
+    if(notes.length>6000){message('Исходный текст не помещается в заметки. Сократите заметки или сохраните голосовой текст отдельной записью.',true);return;}
+    form.elements.notes.value=notes;
+    message('Выжимка добавлена в пустые поля записи. Ваши правки, точка и снасти сохранены. Проверьте дату и улов перед сохранением.');
     form.scrollIntoView({behavior:'smooth',block:'start'});
   });
-  host.querySelector('[data-action="cancel"]').addEventListener('click',()=>{form.hidden=true;editingId=null;});
+  host.querySelector('[data-action="cancel"]').addEventListener('click',()=>{form.hidden=true;editingId=null;trip.invalidate();});
   archiveButton.addEventListener('click',async()=>{showArchive=!showArchive;await refresh();});
   form.addEventListener('submit',async event=>{
     event.preventDefault();
     const submit=form.querySelector('[type="submit"]');submit.disabled=true;
     try{
       const data=Object.fromEntries(fields.map(key=>[key,form.elements[key].value]));
+      data.context=trip.value();
       if(editingId)await PersonalStore.update(editingId,data);else await PersonalStore.add(data);
       form.hidden=true;editingId=null;showArchive=false;await refresh();message('Запись сохранена в этом браузере.');
     }catch(e){message(e.message,true);}finally{submit.disabled=false;}
