@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "places": [
+    {
+      "id": "rybinsk-reservoir",
+      "name": "Рыбинское водохранилище",
+      "aliases": [
+        "Рыбинское водохранилище",
+        "Рыбинка",
+        "Рыбинск"
+      ],
+      "precision": "Водохранилище; город и участки должны уточняться отдельно",
+      "weather": null,
+      "sources": [
+        {
+          "source_id": "rusfishing",
+          "kind": "index",
+          "url": "https://www.rusfishing.ru/forum/forums/rybinskoye-vodokhranilishche.97/"
+        }
+      ]
+    },
+    {
+      "id": "ob-novosibirsk",
+      "name": "Обь в Новосибирске",
+      "aliases": [
+        "Новосибирск",
+        "Обь в Новосибирске",
+        "Новосибирская Обь"
+      ],
+      "precision": "Городской участок, точная точка неизвестна",
+      "weather": null,
+      "sources": [
+        {
+          "source_id": "fishingsib",
+          "kind": "article",
+          "url": "https://www.fishingsib.ru/tidings/view/169085/"
+        },
+        {
+          "source_id": "fishingsib",
+          "kind": "index",
+          "url": "https://www.fishingsib.ru/tidings/",
+          "topics": 1,
+          "geography": "resolve_from_report"
+        }
+      ]
+    },
+    {
+      "id": "umrevinskaya-channel",
+      "name": "Умревинская протока",
+      "aliases": [
+        "Умревинская протока",
+        "Умревинский Острог",
+        "Умревинка"
+      ],
+      "precision": "Протока, конкретный участок нужно уточнять",
+      "weather": null,
+      "sources": [
+        {
+          "source_id": "fishingsib",
+          "kind": "article",
+          "url": "https://www.fishingsib.ru/tidings/view/169079/"
+        }
+      ]
+    }
+  ]
+}

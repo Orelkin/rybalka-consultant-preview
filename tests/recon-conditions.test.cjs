@@ -5,6 +5,11 @@ const path = require('node:path');
 const api = require('../recon-conditions.js');
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/forum-conditions.json'), 'utf8'));
 test('Every conclusion references actual observations from the same place', () => assert.equal(api.validate(data), data));
+test('Cached server replies use the same evidence checks as saved summaries', () => {
+  const cached = {...data, mode:'server_cached', service:{ai_configured:false}};
+  assert.equal(api.validate(cached), cached);
+  assert.throws(() => api.validate({...cached,mode:'invented_live'}));
+});
 test('Place and target filter prevent a perch report from recommending pike', () => {
   assert.equal(api.select(data, 'Новосибирск', 'окунь').length, 1);
   assert.equal(api.select(data, 'Новосибирск', 'щука').length, 0);

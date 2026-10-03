@@ -1,1 +1,6 @@
 source/
+.env
+server/.env
+server/__pycache__/
+server/*.sqlite*
+server/var/
