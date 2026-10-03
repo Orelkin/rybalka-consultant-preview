@@ -1,4 +1,5 @@
 source/
+.local/
 .env
 server/.env
 server/__pycache__/

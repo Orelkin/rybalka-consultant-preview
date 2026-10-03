@@ -20,7 +20,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#04111d;col
 <script>
 (function(){
   const COUNT=11;
-  const VERSION='stage2-desktop-0b137f081d97';
+  const VERSION='stage2-desktop-1b599ee36bd4';
   const MIN_SIZE=6000000;
   window.__APP_CHUNKS=new Array(COUNT);
 
@@ -67,7 +67,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#04111d;col
       const frame=document.createElement('iframe');
       frame.id='app-frame';
       frame.title='Рыбалка — консультант';
-      frame.setAttribute('allow','geolocation');
+      frame.setAttribute('allow','geolocation; microphone');
       document.body.appendChild(frame);
 
       frame.srcdoc=html;

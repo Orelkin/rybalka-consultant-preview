@@ -65,7 +65,15 @@ function harness({stored={},fetcher=async()=>({ok:true,json:async()=>copy(fixtur
     const h=harness({fetcher:()=>{throw Error('offline');}});await h.api.get('nizhnevartovsk');await h.api.get('nizhnevartovsk',{force:true});assert.equal(h.calls(),1);h.advance(31000);await h.api.get('nizhnevartovsk',{force:true});assert.equal(h.calls(),2);
   });
   await check('unknown place cannot issue a request',async()=>{
-    const h=harness();await assert.rejects(h.api.get('private-point'));assert.equal(h.calls(),0);assert.equal(h.api.places.length,5);
+    const h=harness();await assert.rejects(h.api.get('private-point'));assert.equal(h.calls(),0);assert.equal(h.api.places.length,7);
+  });
+  await check('live device weather uses actual zone and never persists private coordinates',async()=>{
+    const raw=copy(fixture);raw.timezone='Europe/Moscow';raw.latitude=55.72;raw.longitude=37.52;
+    const h=harness({fetcher:async()=>({ok:true,json:async()=>raw})});
+    const r=await h.api.getPoint({id:'device',private:true,latitude:55.72,longitude:37.52,timezone:'auto'});
+    assert.equal(r.data.timezone,'Europe/Moscow');assert.ok(r.data);
+    assert.deepEqual(JSON.parse(h.values.get('rybalka.weather.v1')),{});
+    await assert.rejects(h.api.getPoint({id:'device',private:true,latitude:200,longitude:37,timezone:'auto'}));
   });
   console.log(JSON.stringify({passed:checks.length,checks},null,2));
 })().catch(error=>{console.error(error);process.exitCode=1;});

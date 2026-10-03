@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>Проверка Vosk на синтетической записи</title>
+<h1>Синтетическая русская запись — без доступа к микрофону</h1><button id="run">Проверить распознавание</button><pre id="status">Ожидание</pre><pre id="text"></pre>
+<script src="../assets/voice/vosk-0.0.8.js"></script><script src="../voice-notes-core.js"></script>
+<script>
+const button=document.getElementById('run'),status=document.getElementById('status'),output=document.getElementById('text');
+button.onclick=async()=>{
+ button.disabled=true;status.textContent='Загрузка модели';let model,ctx;
+ try{
+  model=new Vosk.Model(new URL('../assets/voice/vosk-small-ru-0.22-v2.tar.gz',location.href).href,2);
+  await new Promise((resolve,reject)=>{
+   const timer=setTimeout(()=>reject(Error('Model load timeout')),90000);
+   model.on('load',m=>{clearTimeout(timer);m.result?resolve():reject(Error('Model load failed'));});
+   model.on('error',m=>{clearTimeout(timer);reject(Error(JSON.stringify(m)));});
+   model.worker.addEventListener('error',e=>{clearTimeout(timer);reject(Error('Worker: '+e.message));});
+  });status.textContent='Модель готова';
+  const r=await fetch('fixtures/voice-synthetic-ru.wav');ctx=new AudioContext();const audio=await ctx.decodeAudioData(await r.arrayBuffer());
+  const recognizer=new model.KaldiRecognizer(audio.sampleRate);let chunks=0,words=[],final=false,finish;
+  const done=new Promise(resolve=>finish=resolve);
+  recognizer.on('result',m=>{if(m.result.text)words.push(m.result.text);output.textContent=words.join('. ');if(final)finish();else ack();});
+  recognizer.on('partialresult',ack);
+  function ack(){chunks--;if(chunks===0){final=true;recognizer.retrieveFinalResult();}}
+  const samples=audio.getChannelData(0),size=4096;chunks=Math.ceil(samples.length/size);
+  for(let i=0;i<samples.length;i+=size)recognizer.acceptWaveformFloat(samples.slice(i,i+size),audio.sampleRate);
+  await Promise.race([done,new Promise((_,reject)=>setTimeout(()=>reject(Error('timeout')),60000))]);
+  const text=words.join('. ');output.textContent=JSON.stringify({text,draft:VoiceNotesCore.extract(text),sampleRate:audio.sampleRate,duration:audio.duration},null,2);status.textContent='Готово';recognizer.remove();
+ }catch(e){status.textContent='Ошибка: '+e.message;}finally{ctx?.close();model?.terminate();button.disabled=false;}
+};
+</script>

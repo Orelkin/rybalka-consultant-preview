@@ -49,6 +49,16 @@
     }
   }
   host.querySelector('[data-action="new"]').addEventListener('click',()=>openForm());
+  window.addEventListener('rybalka-voice-draft',event=>{
+    const draft=event.detail;if(!draft?.text)return;
+    openForm();
+    const values={location:draft.location,fish:draft.fish,result:draft.result,method:draft.method,conclusion:draft.conclusion};
+    const limits={location:160,fish:200,result:1000,method:1500,conclusion:3000};
+    for(const [key,value] of Object.entries(values))if(value&&value.length<=limits[key])form.elements[key].value=value;
+    form.elements.notes.value='Исходная голосовая заметка:\n'+draft.text;
+    message('Выжимка перенесена в новую запись. Проверьте место, дату и улов; исходный текст сохранится в заметках.');
+    form.scrollIntoView({behavior:'smooth',block:'start'});
+  });
   host.querySelector('[data-action="cancel"]').addEventListener('click',()=>{form.hidden=true;editingId=null;});
   archiveButton.addEventListener('click',async()=>{showArchive=!showArchive;await refresh();});
   form.addEventListener('submit',async event=>{

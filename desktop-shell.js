@@ -31,15 +31,15 @@
   const routes = [
     ['home','Главная','home'],['map','Карта','pin'],['research','Куда ехать','where'],['diary','Дневник','diary'],
     ['waters','Водоёмы','water'],['fish','Рыбы','fish'],['methods','Методы ловли','methods'],['gear','Снасти','fish'],
-    ['lures','Приманки','lure'],['researchbase','Исследования','research'],['trips','Поездки из Щербинки','car'],
+    ['lures','Приманки','lure'],['researchbase','Исследования','research'],['trips','Поездки','car'],
     ['knowledge','База знаний','book'],['desktopstats','Статистика','stats'],['desktopsettings','Настройки','settings']
   ];
-  const regions = Object.entries(REGION_DETAIL);
+  const regions = [['Москва',{}],...Object.entries(REGION_DETAIL)];
   const scenes = {sunset:'assets/desktop/lakeshore-hero.webp',lake:'assets/desktop/forest-lake.webp'};
-  let region = regions.find(([name]) => name.startsWith('Нижневартовск'))?.[0] || regions[0][0];
+  let region = window.LocationContext?.snapshot().art?.savedRegion || '';
   let selectedDay = 0;
   let lastPrimary = 'home';
-  const regionLabel = () => region.startsWith('Нижневартовск') ? 'Нижневартовск / Излучинск' : region;
+  const regionLabel = () => window.LocationContext?.snapshot().name || 'Моё местоположение';
   const image = (src, alt = '') => `<img src="${escape(src)}" alt="${escape(alt)}" decoding="async" loading="lazy">`;
   const scenic = () => scenes.sunset;
   const short = (value, limit = 92) => { const s = String(value || ''); return s.length > limit ? s.slice(0, limit - 1) + '…' : s; };
@@ -68,7 +68,7 @@
   sidebar.setAttribute('aria-label','Главная навигация');
   sidebar.innerHTML = `<button class="ds-brand" type="button" data-desktop-route="home">${image(DATA.assets.iconBrand)}<span><strong>РЫБАЛКА</strong><small>КОНСУЛЬТАНТ</small></span></button>
     <nav class="ds-nav">${routes.map(([route,label,name]) => routeButton(route,label,name)).join('')}</nav>
-    <section class="ds-regions"><h2>МОИ РЕГИОНЫ</h2>${regions.map(([name],index) => `<button class="ds-region" type="button" data-desktop-region="${escape(name)}" aria-pressed="${name === region}">${image(index % 2 ? scenes.sunset : scenes.lake)}<span>${escape(name)}</span></button>`).join('')}
+    <section class="ds-regions"><h2>НАПРАВЛЕНИЯ</h2>${regions.map(([name],index) => `<button class="ds-region" type="button" data-desktop-region="${escape(name)}" aria-pressed="${name === region}">${image(index % 2 ? scenes.sunset : scenes.lake)}<span>${escape(name==='Подмосковье'?'Московская область':name)}</span></button>`).join('')}
     <button class="ds-region-more" type="button" data-desktop-route="research">${icon('plus')}Исследовать регион</button></section>`;
   document.body.appendChild(sidebar);
 
@@ -106,8 +106,9 @@
   }
   function renderDashboard() {
     document.getElementById('desktopRegionLabel').textContent = regionLabel();
-    sidebar.querySelectorAll('[data-desktop-region]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.desktopRegion === region)));
-    const waters = relatedWaterbodies(region).slice(0,4);
+    const selected=window.LocationContext?.snapshot();
+    sidebar.querySelectorAll('[data-desktop-region]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.desktopRegion === (selected?.regionId==='RU-MOW'?'Москва':region))));
+    const waters = region ? relatedWaterbodies(region).slice(0,4) : [];
     const recent = [...records().map(record => ({record,personal:true})),...DATA.diary.map((record,index) => ({record,index}))].sort((a,b) => dateRank(b.record.date) - dateRank(a.record.date)).slice(0,4);
     const diaryRows = recent.map(({record:r,personal,index}) => `<button class="ds-record" type="button" ${personal ? 'data-desktop-route="diary"' : `data-desktop-diary="${index}"`}>${image(personal ? scenes.lake : index % 2 ? scenes.lake : scenes.sunset)}<span><span class="ds-record-title">${escape(r.date || 'Дата не указана')}</span><small>${escape(short(personal ? r.location || 'Моя рыбалка' : r.place,45))}<br>${escape(short(r.result || r.conclusion || 'Результат не записан',90))}</small><span class="ds-status">${escape(personal ? 'Личная запись' : r.time || 'Время не зафиксировано')}</span></span><span class="ds-arrow">›</span></button>`);
     const shortcuts = [
@@ -125,7 +126,7 @@
       <section class="ds-panel ds-forecast">${panelHead('Прогноз активности рыбы')}<div class="ds-days">${['Сегодня','Завтра','Послезавтра'].map((label,index) => `<button type="button" data-desktop-day="${index}" aria-pressed="${index === selectedDay}">${label}</button>`).join('')}</div><div class="ds-fish-list"></div><div class="ds-forecast-note"></div></section>
       <section class="ds-panel ds-time-panel">${panelHead('Лучшее время клёва')}<div class="ds-time-chart" aria-label="Почасовой прогноз пока отсутствует">${icon('clock')}</div><div class="ds-hours"><span>00</span><span>04</span><span>08</span><span>12</span><span>16</span><span>20</span><span>24</span></div><div class="ds-time-window">${icon('fish')}<span><small>Рекомендуемое окно</small><strong>Не рассчитано</strong></span></div><div class="ds-time-note">Для расчёта нужны свежие условия и выбранный водоём.</div></section>
       </div><div class="ds-shortcuts">${shortcuts.map(([route,label,sub,name,src,accent]) => `<button class="ds-shortcut" style="--ds-accent:${accent}" type="button" data-desktop-route="${route}" ${label === 'ДОБАВИТЬ РЫБАЛКУ' ? 'data-desktop-new-diary' : ''}>${image(src)}${icon(name)}<strong>${label}</strong><small>${sub}</small><span class="ds-arrow">›</span></button>`).join('')}</div>
-      <div class="ds-lower"><section class="ds-panel ds-points">${panelHead(`Ближайшие точки <small>(${escape(regionLabel())})</small>`,'waters','Все точки →')}<div class="ds-rows">${waters.map((w,index) => `<button class="ds-record" type="button" data-desktop-water="${index}">${image(scenes.lake)}<span><span class="ds-record-title"><span class="ds-dot"></span>${escape(w.name)}</span><small>${escape(short((w.facts || []).slice(0,2).join(' '),110))}</small><span class="ds-status">${escape(short(w.status,70))}</span></span><span class="ds-arrow">›</span></button>`).join('') || '<p class="ds-empty">Точки региона ещё не добавлены. Откройте разведку, чтобы выбрать водоём.</p>'}</div></section>
+      <div class="ds-lower"><section class="ds-panel ds-points">${panelHead('Сохранённые водоёмы','waters','Все водоёмы →')}<div class="ds-rows">${waters.map((w,index) => `<button class="ds-record" type="button" data-desktop-water="${index}">${image(scenes.lake)}<span><span class="ds-record-title"><span class="ds-dot"></span>${escape(w.name)}</span><small>${escape(short((w.facts || []).slice(0,2).join(' '),110))}</small><span class="ds-status">${escape(short(w.status,70))}</span></span><span class="ds-arrow">›</span></button>`).join('') || '<p class="ds-empty">Выберите место или откройте разведку для поиска водоёма.</p>'}</div></section>
       <section class="ds-panel ds-diary">${panelHead('Последние рыбалки','diary','Все записи →')}<div class="ds-rows">${diaryRows.join('')}</div></section>
       <section class="ds-panel ds-trip">${panelHead('Планы поездок','trips','Все планы →')}<div class="ds-rows">${DATA.trips.slice(0,3).map((t,index) => `<button class="ds-record" type="button" data-desktop-trip="${index}">${image(index === 1 ? scenes.sunset : scenes.lake)}<span><span class="ds-record-title">${escape(t.title)}</span><small>${escape(t.target)}<br>Срок не выбран</small><span class="ds-status">${escape(t.status)}</span></span></button>`).join('')}</div></section></div>
       <div class="ds-footer"><section class="ds-panel">${panelHead('Быстрые ссылки')}<div class="ds-footer-links">${[['research','Погода и вода','cloud'],['waters','Уровни рек','water'],['map','Карта и точки','map'],['research','Правила и доступ','diary']].map(([route,label,name]) => routeButton(route,label,name)).join('')}</div></section>
@@ -160,8 +161,11 @@
     const button = event.target.closest('[data-desktop-route],[data-desktop-region],[data-desktop-region-detail],[data-desktop-day],[data-desktop-fish],[data-desktop-water],[data-desktop-diary],[data-desktop-trip]');
     if(!button) return;
     event.preventDefault();
-    if(button.hasAttribute('data-desktop-region')) {region = button.dataset.desktopRegion; renderDashboard(); go('home');}
-    else if(button.hasAttribute('data-desktop-region-detail')) openRegion(region);
+    if(button.hasAttribute('data-desktop-region')) {
+      const ids={'Москва':'moscow','Подмосковье':'istra','Нижневартовск':'nizhnevartovsk','Астраханская область':'astrakhan','Дагестан':'makhachkala'};
+      const name=button.dataset.desktopRegion;window.LocationContext?.manual(ids[name]|| (name.startsWith('Нижневартовск')?'nizhnevartovsk':''));go('home');
+    }
+    else if(button.hasAttribute('data-desktop-region-detail')) {go('home');dashboard.querySelector('[data-location-detect]')?.focus();}
     else if(button.hasAttribute('data-desktop-day')) {selectedDay = Number(button.dataset.desktopDay); renderForecast();}
     else if(button.hasAttribute('data-desktop-fish')) openFish(button.dataset.desktopFish,'home');
     else if(button.hasAttribute('data-desktop-water')) openWaterbodyDetail(dashboard._waters[Number(button.dataset.desktopWater)],'home');
@@ -178,8 +182,9 @@
     }).catch(() => {});
   }
   window.addEventListener('rybalka-personal-data-changed', refreshPersonal);
-  window.addEventListener('rybalka-weather-region-selected',event=>{
-    if(event.detail?.region && region!==event.detail.region) {region=event.detail.region;renderDashboard();}
+  window.addEventListener('rybalka-location-changed',()=>{
+    const next=window.LocationContext.snapshot().art?.savedRegion||'';
+    if(region!==next){region=next;renderDashboard();}else window.LiveWeatherUI?.refreshView();
   });
   // The store can finish opening after this classic script, without any writes.
   refreshPersonal();

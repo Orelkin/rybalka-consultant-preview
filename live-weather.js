@@ -1,4 +1,4 @@
-/* Public town centres only. This cache is independent of the personal diary. */
+/* Public centres persist; live device points stay only in memory. */
 (() => {
   'use strict';
   const places = Object.freeze([
@@ -6,8 +6,10 @@
     {id:'izluchinsk',name:'Излучинск',region:'Нижневартовск',latitude:60.97944,longitude:76.92421,timezone:'Asia/Yekaterinburg'},
     {id:'astrakhan',name:'Астрахань',region:'Астраханская область',latitude:46.34968,longitude:48.04076,timezone:'Europe/Astrakhan'},
     {id:'makhachkala',name:'Махачкала',region:'Дагестан',latitude:42.97782,longitude:47.50027,timezone:'Europe/Moscow'},
-    {id:'shcherbinka',name:'Щербинка',region:'Подмосковье',latitude:55.49972,longitude:37.55972,timezone:'Europe/Moscow'}
-  ].map(Object.freeze));
+    {id:'shcherbinka',name:'Щербинка',region:'Москва',latitude:55.49972,longitude:37.55972,timezone:'Europe/Moscow',regionId:'RU-MOW'},
+    {id:'moscow',name:'Москва',region:'Москва',latitude:55.75204,longitude:37.61781,timezone:'Europe/Moscow',regionId:'RU-MOW'},
+    {id:'istra',name:'Истра',region:'Подмосковье',latitude:55.91979,longitude:36.86876,timezone:'Europe/Moscow',regionId:'RU-MOS'}
+  ].map(p=>Object.freeze({...p,regionId:p.regionId||({nizhnevartovsk:'RU-KHM',izluchinsk:'RU-KHM',astrakhan:'RU-AST',makhachkala:'RU-DA'}[p.id]||'')})));
   const CACHE_KEY = 'rybalka.weather.v1', TTL = 30*60e3, FRESH = 2*3600e3, MAX_AGE = 24*3600e3;
   const cache = new Map(), pending = new Map(), attempts = new Map();
   const number = (value,min,max) => typeof value === 'number' && Number.isFinite(value) && value >= min && value <= max ? value : null;
@@ -20,7 +22,9 @@
   }
   function normalize(raw,place,now=Date.now()) {
     const c = raw?.current, units = raw?.current_units;
-    if(!c || !units || raw.timezone !== place.timezone || units.time !== 'unixtime' ||
+    let zoneValid=raw?.timezone===place.timezone;
+    if(place.timezone==='auto'&&typeof raw?.timezone==='string')try{new Intl.DateTimeFormat('ru-RU',{timeZone:raw.timezone});zoneValid=true;}catch{}
+    if(!c || !units || !zoneValid || units.time !== 'unixtime' ||
        number(raw.latitude,place.latitude-.2,place.latitude+.2) === null ||
        number(raw.longitude,place.longitude-.2,place.longitude+.2) === null) throw new Error('format');
     const time = number(c.time,1,1e11), temperature = number(c.temperature_2m,-100,70);
@@ -39,7 +43,7 @@
           code:number(d.weather_code?.[i],0,99)});
       });
     }
-    return {time,temperature,feels:number(c.apparent_temperature,-120,100),day:c.is_day === 1,
+    return {time,timezone:raw.timezone,temperature,feels:number(c.apparent_temperature,-120,100),day:c.is_day === 1,
       code:number(c.weather_code,0,99),wind:number(c.wind_speed_10m,0,150),direction:number(c.wind_direction_10m,0,360),
       pressure:number(c.pressure_msl,800,1200),precipitation:number(c.precipitation,0,1000),daily};
   }
@@ -56,7 +60,7 @@
     } catch { /* Weather remains usable when storage is blocked. */ }
   }
   function persist() {
-    try {localStorage.setItem(CACHE_KEY,JSON.stringify(Object.fromEntries([...cache].map(([id,e])=>[id,{raw:e.raw,fetchedAt:e.fetchedAt}]))));} catch {}
+    try {localStorage.setItem(CACHE_KEY,JSON.stringify(Object.fromEntries([...cache].filter(([id])=>places.some(p=>p.id===id)).map(([id,e])=>[id,{raw:e.raw,fetchedAt:e.fetchedAt}]))));} catch {}
   }
   function result(entry,place,fromCache,error=null) {
     return {place,data:entry?.data || null,fetchedAt:entry?.fetchedAt || null,fromCache,error,
@@ -65,6 +69,17 @@
   function get(id,{force=false}={}) {
     const place=places.find(p=>p.id === id);
     if(!place) return Promise.reject(new Error('unknown_place'));
+    return fetchPlace(place,{force});
+  }
+  function getPoint(place,options={}) {
+    if(place?.id!=='device'||place.private!==true||place.timezone!=='auto'||
+      number(place.latitude,-90,90)===null||number(place.longitude,-180,180)===null)return Promise.reject(new Error('invalid_point'));
+    return fetchPlace({...place},options);
+  }
+  function fetchPlace(place,{force=false}={}) {
+    const id=place.private ? 'device:'+place.latitude+','+place.longitude : place.id;
+    // A moving device retains only its most recent weather point in memory.
+    if(place.private)for(const key of cache.keys())if(key.startsWith('device:')&&key!==id)cache.delete(key);
     if(pending.has(id)) return pending.get(id);
     const now=Date.now(), entry=usable(cache.get(id),place,now);
     if(entry && !force && now-entry.fetchedAt < TTL && now-entry.data.time*1000 <= FRESH) return Promise.resolve(result(entry,place,true));
@@ -85,5 +100,5 @@
     pending.set(id,task);return task;
   }
   restore();
-  window.LiveWeather = Object.freeze({places,get,normalize,requestURL,freshFor:FRESH,cacheFor:TTL});
+  window.LiveWeather = Object.freeze({places,get,getPoint,normalize,requestURL,freshFor:FRESH,cacheFor:TTL});
 })();
