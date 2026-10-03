@@ -239,15 +239,20 @@
       this.listTitle.textContent = this.view === 'catalogue' ? 'Справочник удилищ' : (this.view === 'archive' ? 'Снасти в архиве' : 'Мой комплект');
       this.listCount.textContent = `${visible.length} из ${all.length}`;
       this.listHint.textContent = this.view === 'catalogue' ? 'Откройте модель, чтобы изучить паспорт или добавить своё удилище.' :
-        (this.view === 'archive' ? 'Снасти из архива можно вернуть в комплект.' : 'Катушка, леска и заметки сохраняются вместе с личным дневником в резервной копии.');
+        (this.view === 'archive' ? 'Снасти из архива можно вернуть в комплект.' : 'Ваш комплект хранится в этом браузере. Для переноса в другой браузер сохраните копию здесь и загрузите её там.');
       this.grid.replaceChildren();
       if (!visible.length) {
         const empty = element('div', 'pg-empty');
         const noFilter = !this.query && this.category === 'all';
-        empty.append(element('h4', '', noFilter && this.view === 'mine' ? 'Соберите свой арсенал' : noFilter && this.view === 'archive' ? 'Архив пуст' : 'Ничего не найдено'));
-        empty.append(element('p', '', noFilter && this.view === 'mine' ? 'Загрузите сохранённый комплект или выберите удилище в справочнике. После добавления можно заполнить катушку, леску и заметки.' :
+        empty.append(element('h4', '', noFilter && this.view === 'mine' ? 'В этом браузере комплект ещё не добавлен' : noFilter && this.view === 'archive' ? 'Архив пуст' : 'Ничего не найдено'));
+        empty.append(element('p', '', noFilter && this.view === 'mine' ? 'Если ваши снасти уже были в другом браузере, загрузите сохранённую копию. Автоматический перенос между браузерами пока не подключён. Для нового комплекта выберите модели из справочника.' :
           noFilter && this.view === 'archive' ? 'Здесь будут снасти, которые вы временно уберёте из комплекта.' : 'Измените название в поиске или выберите другой тип удилища.'));
-        if (noFilter && this.view === 'mine') empty.append(button('Добавить из справочника', () => { this.view = 'catalogue'; this.drawList(); }, 'pg-primary'));
+        if (noFilter && this.view === 'mine') {
+          const actions = element('div', 'pg-actions'); actions.style.justifyContent = 'center';
+          const restore = button('Загрузить сохранённую копию', () => this.input.click(), 'pg-primary'); restore.disabled = !this.available;
+          actions.append(restore, button('Добавить из справочника', () => { this.view = 'catalogue'; this.drawList(); }));
+          empty.append(actions);
+        }
         this.grid.append(empty);
       }
       for (const item of visible) this.grid.append(this.tile(item));
